@@ -38,8 +38,11 @@ export default function RootLayout({
         {/* Google AdSense */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
       </head>
-      <body className="font-body min-h-screen bg-field-paper">
-        {children}
+      <body className="font-body min-h-screen flex flex-col bg-field-paper">
+        <div className="flex-1">{children}</div>
+        <footer className="text-center py-4 border-t border-stone/20">
+          <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" className="font-body text-xs text-stone hover:text-bark transition-colors">❤️ Support Us</a>
+        </footer>
       </body>
     </html>
   );
