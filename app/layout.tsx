@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Solarpunk Survival Guide — Complete Floating Island Survival & Building Guide',
   description: 'Free Solarpunk game guide covering resource gathering, crafting recipes, energy systems, automation, farming, airship upgrades, and full game progression. A cozy survival builder by Cyberwave/rokaplay.',
-  metadataBase: new URL('https://solarpunk-guide-ecru.vercel.app'),
+  metadataBase: new URL('https://solarpunk-game-wiki.vercel.app'),
   openGraph: {
     title: 'Solarpunk Survival Guide',
     description: 'Free Solarpunk game guide covering resource gathering, crafting recipes, energy systems, automation, farming, airship upgrades, and full game progression.',

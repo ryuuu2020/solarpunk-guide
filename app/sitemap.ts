@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://solarpunk-guide-ecru.vercel.app';
+  const baseUrl = 'https://solarpunk-game-wiki.vercel.app';
 
   const pages = [
     { path: '', priority: 1.0, changefreq: 'weekly' as const },
