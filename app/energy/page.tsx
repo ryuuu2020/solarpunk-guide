@@ -1,117 +1,78 @@
-'use client';
-
 export default function EnergyPage() {
   const sources = [
-    { name: 'Solar Panel', tier: 'T2', output: '15 units/hr', condition: 'Daytime only', desc: 'The most common renewable energy source — simple to install with low maintenance costs. Power output is affected by latitude, weather, and panel cleanliness. Efficiency can reach 20 units/hr on high-sunlight islands like deserts.', pros: 'Zero fuel consumption, easy maintenance', cons: 'Ineffective at night, halved in cloudy weather' },
-    { name: 'Wind Turbine', tier: 'T2', output: '8 units/hr', condition: 'All-day', desc: 'Generates power around the clock but with unstable output. Higher efficiency on highland and coastal islands. Pairs well with Solar Panels to cover nighttime and cloudy-day basic power needs.', pros: 'All-day generation, nighttime supplement', cons: 'Unstable output, large footprint' },
-    { name: 'Battery Pack', tier: 'T2', output: 'Storage capacity', condition: 'Energy storage', desc: 'Not a generator itself but a core component of any energy system. Stores surplus daytime power for nighttime use, ensuring 24-hour stable power supply.', pros: 'Balances supply/demand, stabilizes grid', cons: 'Limited capacity, degrades with age' },
-    { name: 'Geothermal Generator', tier: 'T3', output: '25 units/hr', condition: '24/7 stable', desc: 'Harnesses geothermal resources for stable, weather-independent power. Can only be built in specific geothermal-active zones. High construction cost.', pros: 'Stable 24/7 output, high power', cons: 'Location-restricted, high cost' },
-    { name: 'Biomass Power', tier: 'T3', output: '12 units/hr', condition: 'Fuel consumed', desc: 'Burns organic matter to generate power — useful as a waste processing solution. Benefits from renewable raw materials; drawbacks include lower output and continuous fuel supply requirements.', pros: 'Renewable input, waste recycling', cons: 'Low output, requires fuel supply' },
+    { name: 'Solar Panel', desc: 'Generates energy when exposed to sunlight. Most common renewable source — zero fuel cost, zero maintenance. Output varies by time of day and weather. Place in open areas with maximum sun exposure.', pros: 'No fuel, easy to build', cons: 'No power at night, reduced in cloudy weather' },
+    { name: 'Windmill', desc: 'Produces energy based on current wind strength. Provides power day and night, making it a good complement to Solar Panels. Higher output on high-elevation islands with strong winds.', pros: 'All-day power, nighttime coverage', cons: 'Variable output, needs wind' },
+    { name: 'Sky Turbine', desc: 'Large turbine that produces a lot of energy. An upgraded version of the Windmill with significantly higher output. Ideal for powering larger bases and multiple automated machines.', pros: 'High output, all-day operation', cons: 'Expensive to build, large footprint' },
+    { name: 'Battery', desc: 'Stores excess electricity and releases it when needed. Not a generator but essential for any energy system. Each Battery has limited energy intake and output rates. Upgradable capacity: 2,200 → 3,500 → 5,500 → 8,000.', pros: 'Balances supply and demand', cons: 'Limited throughput, requires generation' },
+    { name: 'Cable Connector', desc: 'Links energy networks together. Small Cable Connector for basic connections. Wireless Connector available with advanced research for cable-free power transmission.', pros: 'Essential for power grids', cons: 'Small connectors have range limits' },
   ];
 
   return (
-    <div className="min-h-screen bg-field-paper bg-paper-texture">
-      <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
-        <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Energy System Guide</h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">Solar, wind, storage & advanced energy solutions — a complete breakdown</p>
-        </div>
-        <div className="field-divider mt-6" />
-      </header>
+    <div className="max-w-6xl mx-auto px-4 lg:px-8 py-8">
+      <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none mb-4">Energy System Guide</h1>
+      <p className="font-body text-base text-stone max-w-2xl italic mb-8">Solar, wind, storage, and power distribution — building a reliable energy grid</p>
 
-      <main className="max-w-6xl mx-auto px-4 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          <div className="flex-1 lg:max-w-[65%] space-y-12">
-            <section>
-              <h2 className="font-display text-2xl font-bold text-bark">Energy System Overview</h2>
-              <p className="font-body text-bark-light leading-relaxed mt-4">
-                Energy is the driving force behind all automation equipment and advanced facilities. In Solarpunk, without a stable energy supply, even the most brilliant production designs remain on paper. Energy system management involves four aspects: generation, storage, distribution, and failure recovery — a dynamic balancing act that requires continuous attention and optimization.
-              </p>
-              <p className="font-body text-bark-light leading-relaxed mt-3">
-                When choosing energy solutions, the most important reference factor is the island's geography and climate. The same energy configuration that works perfectly on a temperate island may be entirely inadequate when moved to a polar or desert island. There is no single "best" universal energy setup — you must design dedicated energy configurations based on each island's specific environment. Good energy strategy is about flexibly adapting to local conditions, not rigidly applying a fixed formula.
-              </p>
-              <p className="font-body text-bark-light leading-relaxed mt-3">
-                Hybrid energy systems are the current community-recognized best practice. By combining multiple energy types, you can minimize the inherent drawbacks of any single source: Solar and Wind complement each other for all-weather coverage, Battery Packs balance supply and demand fluctuations, and Geothermal or Biomass provides stable baseline output. Energy can also be interconnected between islands — if one island has excess energy while another is short, you can transport battery modules via airship or establish energy pipelines for cross-island power dispatch.
-              </p>
-              <p className="font-body text-bark-light leading-relaxed mt-3">
-                For most temperate island players, the recommended starter energy configuration is: 2 Solar Panels + 1 Wind Turbine + 2 Battery Packs. This setup provides roughly 38 units/hr of average output (solar-dominant during the day, supplemented by wind and battery at night and in cloudy weather — community estimate), enough to power a Research Station, Basic Workbench, Sprinklers, and roughly 10 automation components. As your base expands, you will need to gradually increase generation capacity and upgrade to more advanced energy solutions.
-              </p>
-            </section>
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <div className="flex-1 lg:max-w-[65%] space-y-12">
+          <section>
+            <h2 className="font-display text-2xl font-bold text-bark mb-4">Energy System Overview</h2>
+            <p className="font-body text-bark-light leading-relaxed">
+              Energy powers your automated machines, lights, and advanced facilities. Without a stable energy supply, your Sprinklers, Transport Drones, and other machines simply stop working. Energy management involves three aspects: generation, storage, and distribution.
+            </p>
+            <p className="font-body text-bark-light leading-relaxed mt-3">
+              Different islands have different energy profiles. Desert islands have abundant sunlight but less wind. Mountain islands have strong winds. Match your energy setup to each island&apos;s natural advantages. There is no single &quot;best&quot; setup — adapt to local conditions.
+            </p>
+            <p className="font-body text-bark-light leading-relaxed mt-3">
+              For most temperate islands, start with 2 Solar Panels + 1 Windmill + 1 Battery. This provides daytime solar power, nighttime wind coverage, and storage to smooth out fluctuations. Expand your capacity as you add more machines to your base.
+            </p>
+          </section>
 
-            <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">Energy Equipment Overview</h2>
-              <div className="space-y-4">
-                {sources.map((s, i) => (
-                  <div key={i} className="journal-card p-6">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-display text-lg font-semibold text-bark">{s.name}</h3>
-                      <span className={`field-tag ${s.tier === 'T2' ? 'moss' : 'terracotta'} text-[10px]`}>{s.tier}</span>
-                    </div>
-                    <div className="flex flex-wrap gap-4 mb-2">
-                      <span className="font-body text-sm text-stone">Output: {s.output}</span>
-                      <span className="font-body text-sm text-stone">Condition: {s.condition}</span>
-                    </div>
-                    <p className="font-body text-sm text-bark-light leading-relaxed mb-2">{s.desc}</p>
-                    <div className="flex gap-6 mt-3 pt-3 border-t border-clay/30">
-                      <p className="font-body text-xs text-bark-light"><span className="font-semibold text-bark">Pros: </span>{s.pros}</p>
-                      <p className="font-body text-xs text-bark-light"><span className="font-semibold text-bark">Cons: </span>{s.cons}</p>
-                    </div>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-bark mb-6">Energy Equipment</h2>
+            <div className="space-y-4">
+              {sources.map((s, i) => (
+                <div key={i} className="journal-card p-6">
+                  <h3 className="font-display text-lg font-semibold text-bark mb-2">{s.name}</h3>
+                  <p className="font-body text-sm text-bark-light leading-relaxed mb-3">{s.desc}</p>
+                  <div className="flex gap-6 pt-3 border-t border-clay/30">
+                    <p className="font-body text-xs text-bark-light"><span className="font-semibold text-bark">Pros: </span>{s.pros}</p>
+                    <p className="font-body text-xs text-bark-light"><span className="font-semibold text-bark">Cons: </span>{s.cons}</p>
                   </div>
-                ))}
-              </div>
-              <p className="font-body text-xs text-stone mt-4 italic">* Power data are community estimates; actual output is affected by environmental factors.</p>
-            </section>
-
-            <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">Frequently Asked Questions</h2>
-              <div className="space-y-2">
-                <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How do I calculate my total power generation needs?</summary>
-                  <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    List the power requirements of all devices in your base, sum them up, then add a 20% redundancy margin to ensure nothing shuts down during peak demand. Example: Research Station (5) + Sprinkler (8) + Basic Workbench (3) + 2 Furnaces (8×2) + Lighting (2) = 34 units/hr. With redundancy, your target generation is 41 units/hr. Then work backwards from your island's sunlight and wind conditions to calculate the number of generation devices needed.
-                  </p>
-                </details>
-                <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How long does it take to fully charge a battery?</summary>
-                  <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    The time to fully charge depends on your generation equipment's current surplus output. For a standard battery (capacity 100 units): if you generate 38 units/hr and consume 20 units/hr during the day, the surplus is 18 units/hr for charging, taking approximately 5-6 hours to fully charge. This is also why at least 2 Battery Packs are recommended — they can more effectively absorb the large surplus power during peak generation periods.
-                  </p>
-                </details>
-                <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">What\'s the best energy setup for polar islands?</summary>
-                  <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    Polar islands have short daylight hours (about 8 hours/day), greatly reducing solar panel efficiency. Recommended setup: Geothermal Generator (if a geothermal point is available) + multiple Wind Turbines + large-capacity Battery Packs. Wind Turbines may actually have higher power output in polar regions due to strong winds and low temperatures. If geothermal is unavailable, consider using Biomass power as a stable baseline output source. Polar island energy configurations must especially emphasize storage capacity and redundancy design.
-                  </p>
-                </details>
-              </div>
-            </section>
-          </div>
-
-          <aside className="lg:w-[30%] space-y-10 shrink-0">
-            <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">Related Guides</h3>
-              <div className="space-y-2 font-body text-sm">
-                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">Automation System Guide</a>
-                <a href="/farming" className="block text-moss hover:text-moss-dark transition-colors">Farming System Guide</a>
-                <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">World Map</a>
-              </div>
+                </div>
+              ))}
             </div>
-            <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">Recommended Starter Configs</h3>
-              <div className="font-body text-xs text-bark-light leading-relaxed">
-                <p>Temperate Islands: 2 Solar + 1 Wind + 2 Battery</p>
-                <p>Desert Islands: 3 Solar + 2 Battery</p>
-                <p>Polar Islands: 2 Wind + 3 Battery + Geothermal</p>
-              </div>
-            </div>
-          </aside>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-bold text-bark mb-4">Power Logic & Sensors</h2>
+            <p className="font-body text-bark-light leading-relaxed">
+              Advanced energy management uses sensors and logic blocks. Connect a Daytime Sensor between your lights and power source — the lights automatically turn on at night and off during the day. Use Rain Sensors for weather-based switching. Logic Blocks let you invert signals and create conditional power routing.
+            </p>
+            <p className="font-body text-bark-light leading-relaxed mt-3">
+              The Weather Station unlocks with dedicated research and provides comprehensive environmental data plus switching capabilities based on weather conditions.
+            </p>
+          </section>
         </div>
-        <div className="field-divider mt-16" />
-      </main>
-      <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/privacy" className="hover:text-bark transition-colors">Privacy Policy</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
-      </footer>
+
+        <aside className="lg:w-[30%] space-y-10 shrink-0">
+          <div className="field-sidebar-block">
+            <h3 className="font-display text-base font-semibold text-bark mb-4">Related Guides</h3>
+            <div className="space-y-2 font-body text-sm">
+              <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">Automation & Machines</a>
+              <a href="/farming" className="block text-moss hover:text-moss-dark transition-colors">Farming System Guide</a>
+              <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">World Map</a>
+            </div>
+          </div>
+          <div className="field-sidebar-block">
+            <h3 className="font-display text-base font-semibold text-bark mb-4">Recommended Setups</h3>
+            <div className="font-body text-xs text-bark-light leading-relaxed space-y-2">
+              <p><strong>Temperate Islands:</strong> 2 Solar + 1 Windmill + 1 Battery</p>
+              <p><strong>Desert Islands:</strong> 3 Solar + 2 Batteries</p>
+              <p><strong>Windy Islands:</strong> 2 Windmills + 1 Battery</p>
+            </div>
+          </div>
+        </aside>
+      </div>
     </div>
   );
 }

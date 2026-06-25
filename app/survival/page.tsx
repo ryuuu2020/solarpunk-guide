@@ -8,19 +8,7 @@ export const metadata: Metadata = {
 export default function SurvivalPage() {
   return (
     <div className="min-h-screen bg-field-paper bg-paper-texture">
-      <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
-        <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">
-            Survival Guide
-          </h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">
-            A complete Solarpunk survival walkthrough from scratch
-          </p>
-        </div>
-        <div className="field-divider mt-6" />
-      </header>
-
+      
       <main className="max-w-6xl mx-auto px-4 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           <div className="flex-1 lg:max-w-[65%] space-y-16">
@@ -233,11 +221,6 @@ export default function SurvivalPage() {
         <div className="field-divider mt-16" />
       </main>
 
-      <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">
-          &copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/" className="hover:text-bark transition-colors">Back to Home</a>
-        </p>
-      </footer>
-    </div>
+          </div>
   );
 }

@@ -25,16 +25,16 @@ const NAV_ITEMS = [
 ];
 
 const CRAFTING_RECIPES = [
-  { name: 'Basic Workbench', materials: 'Wood x10 + Stone x5', tier: '1' },
-  { name: 'Solar Panel', materials: 'Silicon Wafer x4 + Copper Wire x8 + Glass x2', tier: '2' },
-  { name: 'Auto Watering System', materials: 'Iron Pipe x6 + Water Pump x1 + Circuit Board x2', tier: '3' },
-  { name: 'Airship Engine Core', materials: 'Titanium Alloy x20 + Energy Core x1 + Advanced Circuit x5', tier: '4' },
+  { name: 'Crafting Table', materials: 'Basic crafting station for early recipes', tier: '1' },
+  { name: 'Solar Panel', materials: 'Generates energy from sunlight', tier: '2' },
+  { name: 'Sprinkler', materials: 'Automatically waters nearby crop fields', tier: '2' },
+  { name: 'Transport Drone', materials: 'Transports resources between islands', tier: '3' },
 ];
 
 const UPDATES = [
-  { date: '2026-06-20', text: 'Community discovers a new automated farm layout, boosting yield by 40%' },
-  { date: '2026-06-15', text: 'Devs confirm "Crystal Caverns" biome coming in the next major update' },
-  { date: '2026-06-10', text: 'Community airship blueprint sharing event now open' },
+  { date: '2026-06-08', text: 'Solarpunk 1.0 launches on Steam, GOG, Epic, PS5, Xbox Series X|S, and Switch 2' },
+  { date: '2026-06-08', text: 'Online co-op for 2-4 players available at launch' },
+  { date: '2025-12-01', text: 'Closed beta concludes — full release date confirmed' },
 ];
 
 export default function RootLayout({

@@ -18,8 +18,8 @@ const FEATURED_GUIDES = [
 const TIPS = [
   { tip: 'Build a Rain Collector early — water is scarcer than food in the early game', category: 'Survival' },
   { tip: 'Place fences along floating island edges to prevent accidental falls', category: 'Building' },
-  { tip: 'Solar panels need regular cleaning — dust reduces efficiency', category: 'Tech' },
-  { tip: 'Warm-tone lighting reduces crop growth penalty during nighttime', category: 'Farming' },
+  { tip: 'Solar panels generate energy only during daytime — use batteries to store power for nighttime', category: 'Tech' },
+  { tip: 'Use Sprinklers to automate crop watering once you have a stable power supply', category: 'Farming' },
 ];
 
 export default function HomePage() {
@@ -33,7 +33,7 @@ export default function HomePage() {
             Welcome to the Floating Islands
           </h2>
           <p className="font-body text-lg text-bark-light leading-relaxed mt-4 max-w-2xl">
-            Solarpunk is an open-world survival building game where you build a home on islands floating in the sky — solo or with friends. Start by gathering your first pieces of wood, progress through the tech tree, build automated factories, and craft your very own airship. This guide takes you from zero to mastering every core system.
+            Solarpunk is an open-world survival crafting game where you build a home on islands floating in the sky — solo or with friends. Grow crops, raise animals, power your base with renewable energy, and upgrade your airship to reach new islands. This guide takes you from zero to mastering every core system.
           </p>
         </section>
 
@@ -102,7 +102,7 @@ export default function HomePage() {
             {[
               { step: '01', title: 'Gather Basic Resources', desc: 'After landing, prioritize collecting wood, stone, and fiber. Craft a Stone Axe and Stone Pickaxe to boost gathering efficiency. Keep an eye out for berry bushes and edible plants.' },
               { step: '02', title: 'Build Your First Shelter', desc: 'Construct a 3x3 wooden hut. Place a Workbench and Campfire inside. Craft a Bed to ensure good sleep quality, which directly affects your work efficiency.' },
-              { step: '03', title: 'Unlock the Tech Tree', desc: 'After building a Research Station, prioritize researching Basic Farming and Basic Power. Unlock Solar Panels and Water Pumps to prepare for automation.' },
+              { step: '03', title: 'Unlock the Tech Tree', desc: 'After building a Research Table, prioritize researching Basic Farming and Basic Power. Unlock Solar Panels and Water Pumps to prepare for mid-game expansion.' },
             ].map((s, i) => (
               <div key={i} className="flex gap-5 items-start">
                 <span className="step-number shrink-0">{s.step}</span>
@@ -159,12 +159,12 @@ export default function HomePage() {
                 <tr className="border-b border-clay/30">
                   <td className="py-3 px-4 font-semibold text-bark">Energy</td>
                   <td className="py-3 px-4">Solar/Wind/Battery storage, day-night cycle management</td>
-                  <td className="py-3 px-4">Solar Panel, Wind Turbine, Battery Pack</td>
+                  <td className="py-3 px-4">Solar Panel, Windmill, Battery</td>
                 </tr>
                 <tr className="border-b border-clay/30">
                   <td className="py-3 px-4 font-semibold text-bark">Automation</td>
-                  <td className="py-3 px-4">Conveyor belts, sorters, drone transport network</td>
-                  <td className="py-3 px-4">Conveyor Belt System, Smart Sorter, Drone Station</td>
+                  <td className="py-3 px-4">Transport drones, sprinklers, foresters, logic sensors</td>
+                  <td className="py-3 px-4">Transport Drone, Sprinkler, Forester, Logic Block</td>
                 </tr>
                 <tr className="border-b border-clay/30">
                   <td className="py-3 px-4 font-semibold text-bark">Farming</td>
@@ -193,9 +193,9 @@ export default function HomePage() {
           </h3>
           <div className="space-y-2">
             {[
-              { q: 'What should I do first in Solarpunk?', a: 'Immediately collect 2 Wood to craft a Survival Handbook. It unlocks the recipe browser, tracks game progress, and is the single most important item in the game.' },
-              { q: 'How do I get Copper Ore?', a: 'Copper is scarce on the starting island. Prioritize repairing your airship to reach L2 islands, where copper deposits are abundant. Use a Furnace to smelt Copper Ore into Copper Ingots.' },
-              { q: 'How do Solar Panels work?', a: 'They produce 15 units/hour during daytime and zero at night. Use Batteries to store surplus daytime power for nighttime use. The recommended setup is 2 Solar Panels + 1 Wind Turbine + 2 Battery Packs.' },
+              { q: 'What should I do first in Solarpunk?', a: 'Immediately collect wood and stone to craft basic tools — a Stone Axe and Stone Pickaxe. Build a Crafting Table as soon as possible to unlock more recipes. Gather berries and edible plants to maintain your food supply while you establish your first base.' },
+              { q: 'How do I get Copper Ore?', a: 'Copper is scarce on the starting island. Prioritize repairing your airship to reach new islands where copper deposits are more abundant. Use a Furnace to smelt Copper Ore into Copper Ingots.' },
+              { q: 'How do Solar Panels work?', a: 'Solar Panels generate energy during daylight hours and stop at night. Use Batteries to store surplus daytime power for nighttime use. Pair Solar Panels with Windmills for more consistent all-day power coverage.' },
             ].map((faq, i) => (
               <details key={i} className="journal-card p-4 group cursor-pointer">
                 <summary className="font-display font-semibold text-bark text-sm marker:text-moss">
