@@ -4,6 +4,18 @@ export default function NewsPage() {
   const news = [
     {
       date: '2026-06-25',
+      title: 'Co-op Community Spotlight: Top 5 Island Base Designs from Week 2',
+      summary: "Two weeks after Solarpunk's launch, the community has produced stunning base designs that push the floating island builder to its limits. We rounded up the 5 most impressive — and practical — layouts. #1: The Windmill Spiral by Reddit user SolarSailor stacks 8 wind turbines in a spiral pattern for 100% uptime even during calm weather, using a clever conveyor loop to automatically distribute batteries. #2: The Greenhouse Dome by Steam user FloatingFarm layers 3 concentric rings of sprinkler-fed crop plots around a central water collector, achieving an estimated 60% water efficiency boost over linear layouts. #3: The Skyport Hub by YouTube creator CozyBuilder demonstrates a docking station layout that handles 3 airships simultaneously without collision — a must-see for multiplayer groups. #4: The Cliffside Citadel uses natural island terrain to create vertical farming terraces that look like a hanging garden. #5: The Minimalist Pod packs full functionality (power, food, crafting) into just 5×5 foundation tiles for speedrunners chasing efficiency records. Which one fits your playstyle?",
+      category: 'Community',
+    },
+    {
+      date: '2026-06-25',
+      title: 'Patch 1.0.3: Airship Physics Overhaul, Farming Buffs, and Console Progress',
+      summary: 'Cyberwave released patch 1.0.3, delivering critical fixes to airship collision detection — navigating between floating islands should now feel significantly more reliable. Early-game farming received major tuning: first-time melon and wheat harvests now yield higher seed returns, and cotton growth speed has been boosted by 25%, accelerating the path to mid-tier automation milestones. A new save state migration system ensures backward compatibility for pre-1.0.3 save files. The team is actively working on a list of 16 high-priority bugs affecting cooperative play, with the most impactful fix addressing a client inventory bug for players joining friends\' worlds. Console certification for Xbox and PS5 is underway, while the Nintendo Switch 2 version remains a longer-term project as the team prioritizes current build stability.',
+      category: 'Game Update',
+    },
+    {
+      date: '2026-06-25',
       title: 'Farming Guide: Max Efficiency Layouts Published',
       summary: 'Our complete farming efficiency guide is now live, covering everything from your first berry bushes to endgame greenhouse scaling. Learn the 5×5 sprinkler rule, optimal wheat grid layouts, and when greenhouse ROI actually makes sense. Includes power consumption math (3 power/hr per Sprinkler) and crop priority rankings: Wheat > Cotton > Watermelon for your first greenhouse.',
       category: 'Guide Update',
