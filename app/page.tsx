@@ -63,6 +63,11 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-field-paper bg-paper-texture">
 
+      {/* ===== Hero Image ===== */}
+      <div className="w-full h-48 lg:h-80 overflow-hidden">
+        <img src="/hero.png" alt="Solarpunk" className="w-full h-full object-cover" />
+      </div>
+
       {/* ===== Header ===== */}
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
