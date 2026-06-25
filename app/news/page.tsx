@@ -3,6 +3,12 @@
 export default function NewsPage() {
   const news = [
     {
+      date: '2026-06-25',
+      title: 'Farming Guide: Max Efficiency Layouts Published',
+      summary: 'Our complete farming efficiency guide is now live, covering everything from your first berry bushes to endgame greenhouse scaling. Learn the 5×5 sprinkler rule, optimal wheat grid layouts, and when greenhouse ROI actually makes sense. Includes power consumption math (3 power/hr per Sprinkler) and crop priority rankings: Wheat > Cotton > Watermelon for your first greenhouse.',
+      category: 'Guide Update',
+    },
+    {
       date: '2026-06-20',
       title: 'Community Discovers New Automated Farm Layout — 40% Yield Increase',
       summary: 'A veteran player shared an optimized automated farm layout design. By improving conveyor belt paths and sorter placement, the design achieves roughly 40% higher yield per unit area. The community team is conducting compatibility tests across multiple island environments, after which the complete layout blueprint and building tutorial will be published on the guide site.',
