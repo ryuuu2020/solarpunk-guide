@@ -8,25 +8,25 @@ import { useState, useRef, useEffect } from 'react';
    ============================================ */
 
 const NAV_ITEMS = [
-  { label: '生存日志', href: '/', active: true },
-  { label: '建造指南', href: '/guides' },
-  { label: '制作配方', href: '/crafting' },
-  { label: '世界地图', href: '/map' },
-  { label: '生存技巧', href: '/tips' },
-  { label: '社区', href: '/community' },
+  { label: 'Field Log', href: '/', active: true },
+  { label: 'Guides', href: '/guides' },
+  { label: 'Crafting', href: '/crafting' },
+  { label: 'World Map', href: '/map' },
+  { label: 'Tips', href: '/tips' },
+  { label: 'Community', href: '/community' },
 ];
 
 const FEATURED_GUIDES = [
   {
-    title: '新手生存完全指南',
-    excerpt: '从登陆浮空岛的第一天到建立自给自足的基地，手把手带你走完 Solarpunk 前 10 小时',
+    title: 'Complete Beginner Survival Guide',
+    excerpt: 'From landing on your first floating island to building a self-sufficient base — a step-by-step walkthrough of your first 10 hours in Solarpunk',
     tag: 'GUIDE',
     tagType: 'moss' as const,
     readTime: '15',
   },
   {
-    title: '飞船建造与自定义教程',
-    excerpt: '详解飞行器建造系统：引擎选择、甲板布局、燃料管理以及如何在云层之上建立移动基地',
+    title: 'Airship Building & Customization Tutorial',
+    excerpt: 'Deep dive into the airship building system: engine selection, deck layout, fuel management, and how to build a mobile base above the clouds',
     tag: 'TUTORIAL',
     tagType: 'terracotta' as const,
     readTime: '12',
@@ -34,17 +34,17 @@ const FEATURED_GUIDES = [
 ];
 
 const CRAFTING_RECIPES = [
-  { name: '基础工作台', materials: '木材x10 + 石头x5', tier: '1' },
-  { name: '太阳能电池板', materials: '硅片x4 + 铜线x8 + 玻璃x2', tier: '2' },
-  { name: '自动浇水系统', materials: '铁管x6 + 水泵x1 + 电路板x2', tier: '3' },
-  { name: '飞船引擎核心', materials: '钛合金x20 + 能源核心x1 + 高级电路x5', tier: '4' },
+  { name: 'Basic Workbench', materials: 'Wood x10 + Stone x5', tier: '1' },
+  { name: 'Solar Panel', materials: 'Silicon Wafer x4 + Copper Wire x8 + Glass x2', tier: '2' },
+  { name: 'Auto Watering System', materials: 'Iron Pipe x6 + Water Pump x1 + Circuit Board x2', tier: '3' },
+  { name: 'Airship Engine Core', materials: 'Titanium Alloy x20 + Energy Core x1 + Advanced Circuit x5', tier: '4' },
 ];
 
 const TIPS = [
-  { tip: '早期优先建造雨水收集器，水资源比食物更稀缺', category: '生存' },
-  { tip: '浮空岛边缘放围栏防止失足坠落', category: '建造' },
-  { tip: '太阳能板需要定期清洁，灰尘会降低效率', category: '科技' },
-  { tip: '暖色调灯光可以减少作物夜间生长惩罚', category: '农耕' },
+  { tip: 'Build a Rain Collector early — water is scarcer than food in the early game', category: 'Survival' },
+  { tip: 'Place fences along floating island edges to prevent accidental falls', category: 'Building' },
+  { tip: 'Solar panels need regular cleaning — dust reduces efficiency', category: 'Tech' },
+  { tip: 'Warm-tone lighting reduces crop growth penalty during nighttime', category: 'Farming' },
 ];
 
 export default function HomePage() {
@@ -72,10 +72,10 @@ export default function HomePage() {
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
           <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">
-            Solarpunk 生存指南
+            Solarpunk Survival Guide
           </h1>
             <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">
-              在漂浮岛屿上生存、建造、探索 —— 从零开始的 Solarpunk 攻略日志
+              Survive, build, and explore on floating islands — a Solarpunk field journal from the ground up
             </p>
 
           <div className="w-full mt-8">
@@ -111,10 +111,10 @@ export default function HomePage() {
             {/* --- Welcome / Hero message --- */}
             <section>
               <h2 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-bark leading-tight text-balance">
-                欢迎来到浮空岛世界
+                Welcome to the Floating Islands
               </h2>
               <p className="font-body text-lg text-bark-light leading-relaxed mt-4 max-w-2xl">
-                Solarpunk 是一款开放世界生存建造游戏，你将独自或与朋友一起在漂浮于空中的岛屿上建立家园。从采集第一块木材开始，逐步解锁科技树，建造自动化工厂，打造属于你自己的飞行器。本指南从零开始，带你掌握所有核心系统。
+                Solarpunk is an open-world survival building game where you build a home on islands floating in the sky — solo or with friends. Start by gathering your first pieces of wood, progress through the tech tree, build automated factories, and craft your very own airship. This guide takes you from zero to mastering every core system.
               </p>
             </section>
 
@@ -123,17 +123,17 @@ export default function HomePage() {
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <h3 className="font-display text-xl font-semibold text-bark">
-                    精选攻略
+                    Featured Guides
                   </h3>
                   <p className="font-body text-sm text-stone mt-1">
-                    从零开始的 Solarpunk 冒险之旅
+                    Your Solarpunk adventure starts here
                   </p>
                 </div>
                 <a
                   href="/guides"
                   className="font-body text-sm font-semibold text-moss hover:text-moss-dark transition-colors"
                 >
-                  查看全部 &rarr;
+                  View All &rarr;
                 </a>
               </div>
 
@@ -160,7 +160,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className="font-body text-xs text-stone whitespace-nowrap">
-                        {guide.readTime} 分钟阅读
+                        {guide.readTime} min read
                       </span>
                     </div>
                   </a>
@@ -172,18 +172,18 @@ export default function HomePage() {
             <section>
               <div className="mb-6">
                 <h3 className="font-display text-xl font-semibold text-bark">
-                  快速上手
+                  Quick Start
                 </h3>
                 <p className="font-body text-sm text-stone mt-1">
-                  从零开始在浮空岛上生存
+                  Surviving on floating islands from scratch
                 </p>
               </div>
 
               <div className="space-y-6">
                 {[
-                  { step: '01', title: '收集基础资源', desc: '落地后优先收集木材、石头和纤维。制作石斧和石镐，提升采集效率。留意浆果丛和可食用植物。' },
-                  { step: '02', title: '建造第一个庇护所', desc: '用木材搭建 3x3 的小屋，放置工作台和篝火。制作床铺以保证睡眠质量，这会直接影响工作效率。' },
-                  { step: '03', title: '解锁科技树', desc: '建造研究台后，优先研究基础农耕和基础电力。解锁太阳能板和水泵，为自动化做准备。' },
+                  { step: '01', title: 'Gather Basic Resources', desc: 'After landing, prioritize collecting wood, stone, and fiber. Craft a Stone Axe and Stone Pickaxe to boost gathering efficiency. Keep an eye out for berry bushes and edible plants.' },
+                  { step: '02', title: 'Build Your First Shelter', desc: 'Construct a 3x3 wooden hut. Place a Workbench and Campfire inside. Craft a Bed to ensure good sleep quality, which directly affects your work efficiency.' },
+                  { step: '03', title: 'Unlock the Tech Tree', desc: 'After building a Research Station, prioritize researching Basic Farming and Basic Power. Unlock Solar Panels and Water Pumps to prepare for automation.' },
                 ].map((s, i) => (
                   <div key={i} className="flex gap-5 items-start">
                     <span className="step-number shrink-0">{s.step}</span>
@@ -204,7 +204,7 @@ export default function HomePage() {
             <section>
               <div className="mb-6">
                 <h3 className="font-display text-xl font-semibold text-bark">
-                  实用技巧
+                  Useful Tips
                 </h3>
               </div>
 
@@ -225,42 +225,42 @@ export default function HomePage() {
             {/* --- Quick Reference: Key Systems --- */}
             <section>
               <h3 className="font-display text-xl font-semibold text-bark mb-6">
-                核心系统速览
+                Core Systems at a Glance
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-moss/30">
-                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">系统</th>
-                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">核心机制</th>
-                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">关键解锁</th>
+                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">System</th>
+                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">Core Mechanics</th>
+                      <th className="text-left py-3 px-4 font-display font-semibold text-bark">Key Unlocks</th>
                     </tr>
                   </thead>
                   <tbody className="font-body text-bark-light">
                     <tr className="border-b border-clay/30">
-                      <td className="py-3 px-4 font-semibold text-bark">能源</td>
-                      <td className="py-3 px-4">太阳能/风能/电池储能，日夜循环管理</td>
-                      <td className="py-3 px-4">太阳能板、风力发电机、电池组</td>
+                      <td className="py-3 px-4 font-semibold text-bark">Energy</td>
+                      <td className="py-3 px-4">Solar/Wind/Battery storage, day-night cycle management</td>
+                      <td className="py-3 px-4">Solar Panel, Wind Turbine, Battery Pack</td>
                     </tr>
                     <tr className="border-b border-clay/30">
-                      <td className="py-3 px-4 font-semibold text-bark">自动化</td>
-                      <td className="py-3 px-4">传送带、分类器、无人机运输网络</td>
-                      <td className="py-3 px-4">传送带系统、智能分类器、无人机基站</td>
+                      <td className="py-3 px-4 font-semibold text-bark">Automation</td>
+                      <td className="py-3 px-4">Conveyor belts, sorters, drone transport network</td>
+                      <td className="py-3 px-4">Conveyor Belt System, Smart Sorter, Drone Station</td>
                     </tr>
                     <tr className="border-b border-clay/30">
-                      <td className="py-3 px-4 font-semibold text-bark">农耕</td>
-                      <td className="py-3 px-4">种植、灌溉、施肥、自动化收获</td>
-                      <td className="py-3 px-4">耕地、洒水器、肥料站、自动收割机</td>
+                      <td className="py-3 px-4 font-semibold text-bark">Farming</td>
+                      <td className="py-3 px-4">Planting, irrigation, fertilization, automated harvesting</td>
+                      <td className="py-3 px-4">Farmland, Sprinkler, Fertilizer Station, Auto Harvester</td>
                     </tr>
                     <tr className="border-b border-clay/30">
-                      <td className="py-3 px-4 font-semibold text-bark">飞船</td>
-                      <td className="py-3 px-4">修复、升级、解锁更高级岛屿</td>
-                      <td className="py-3 px-4">修理套件、飞船码头、引擎升级</td>
+                      <td className="py-3 px-4 font-semibold text-bark">Airship</td>
+                      <td className="py-3 px-4">Repair, upgrade, unlock higher-tier islands</td>
+                      <td className="py-3 px-4">Repair Kit, Airship Dock, Engine Upgrade</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-semibold text-bark">建造</td>
-                      <td className="py-3 px-4">模块化建造、房间系统、美观度</td>
-                      <td className="py-3 px-4">木墙/石墙/钢墙、地板、屋顶</td>
+                      <td className="py-3 px-4 font-semibold text-bark">Building</td>
+                      <td className="py-3 px-4">Modular building, room system, aesthetics</td>
+                      <td className="py-3 px-4">Wood/Stone/Steel Wall, Floor, Roof</td>
                     </tr>
                   </tbody>
                 </table>
@@ -270,13 +270,13 @@ export default function HomePage() {
             {/* --- FAQ Section --- */}
             <section>
               <h3 className="font-display text-xl font-semibold text-bark mb-6">
-                玩家常问
+                Common Questions
               </h3>
               <div className="space-y-2">
                 {[
-                  { q: 'Solarpunk 中第一件该做什么？', a: '立即用2个木材制作生存手册。它解锁配方浏览器、追踪游戏进程，是游戏中最重要的物品。' },
-                  { q: '如何获得铜矿？', a: '初始岛屿铜矿稀少。优先修复飞船前往L2岛屿，那里铜矿储量丰富。用熔炉将铜矿冶炼为铜锭。' },
-                  { q: '太阳能板如何工作？', a: '白天产出15单位/小时，夜晚为零。用电池储存白天多余电力供夜间使用。推荐2太阳能+1风车+2电池配置。' },
+                  { q: 'What should I do first in Solarpunk?', a: 'Immediately collect 2 Wood to craft a Survival Handbook. It unlocks the recipe browser, tracks game progress, and is the single most important item in the game.' },
+                  { q: 'How do I get Copper Ore?', a: 'Copper is scarce on the starting island. Prioritize repairing your airship to reach L2 islands, where copper deposits are abundant. Use a Furnace to smelt Copper Ore into Copper Ingots.' },
+                  { q: 'How do Solar Panels work?', a: 'They produce 15 units/hour during daytime and zero at night. Use Batteries to store surplus daytime power for nighttime use. The recommended setup is 2 Solar Panels + 1 Wind Turbine + 2 Battery Packs.' },
                 ].map((faq, i) => (
                   <details key={i} className="journal-card p-4 group cursor-pointer">
                     <summary className="font-display font-semibold text-bark text-sm marker:text-moss">
@@ -297,7 +297,7 @@ export default function HomePage() {
             {/* --- Crafting Quick Reference --- */}
             <div className="field-sidebar-block">
               <h3 className="font-display text-base font-semibold text-bark mb-4">
-                关键配方速查
+                Key Recipe Reference
               </h3>
               <div className="space-y-3">
                 {CRAFTING_RECIPES.map((recipe, i) => (
@@ -318,20 +318,20 @@ export default function HomePage() {
                 href="/crafting"
                 className="inline-block font-body text-xs font-semibold text-moss hover:text-moss-dark transition-colors mt-4"
               >
-                完整配方列表 &rarr;
+                Full Recipe List &rarr;
               </a>
             </div>
 
             {/* --- Community Updates --- */}
             <div className="field-sidebar-block">
               <h3 className="font-display text-base font-semibold text-bark mb-4">
-                最新动态
+                Latest Updates
               </h3>
               <div className="space-y-4">
                 {[
-                  { date: '2026-06-20', text: '社区发现新型自动化农场布局，产量提升 40%' },
-                  { date: '2026-06-15', text: '官方确认下次更新将加入新生物群系"水晶洞穴"' },
-                  { date: '2026-06-10', text: '玩家自制飞船蓝图分享活动开启' },
+                  { date: '2026-06-20', text: 'Community discovers a new automated farm layout, boosting yield by 40%' },
+                  { date: '2026-06-15', text: 'Devs confirm "Crystal Caverns" biome coming in the next major update' },
+                  { date: '2026-06-10', text: 'Community airship blueprint sharing event now open' },
                 ].map((update, i) => (
                   <div key={i}>
                     <span className="font-body text-[11px] text-stone">
@@ -348,10 +348,10 @@ export default function HomePage() {
             {/* --- Afdian support card --- */}
             <div className="bg-moss-light/50 border border-moss/20 p-6">
               <h3 className="font-display text-sm font-semibold text-moss-dark mb-2">
-                支持本站
+                Support This Site
               </h3>
               <p className="font-body text-xs text-bark-light leading-relaxed mb-4">
-                如果本指南对你有帮助，欢迎支持我们持续更新更多深度攻略
+                If this guide has helped you, consider supporting us to keep creating more in-depth content
               </p>
               <a
                 href="https://afdian.com/a/gameguidehub"
@@ -361,7 +361,7 @@ export default function HomePage() {
                            bg-moss text-white text-sm font-semibold
                            hover:bg-moss-dark transition-colors duration-200"
               >
-                ❤️ 支持我们
+                ❤️ Support Us
               </a>
             </div>
           </aside>
@@ -376,25 +376,25 @@ export default function HomePage() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-6">
             <span className="font-body text-sm text-stone">
-              &copy; {new Date().getFullYear()} Solarpunk 生存指南
+              &copy; {new Date().getFullYear()} Solarpunk Survival Guide
             </span>
             <a
               href="/privacy"
               className="font-body text-sm text-stone hover:text-bark transition-colors"
             >
-              隐私政策
+              Privacy Policy
             </a>
             <a
               href="/terms"
               className="font-body text-sm text-stone hover:text-bark transition-colors"
             >
-              使用条款
+              Terms of Use
             </a>
             <a
               href="/about"
               className="font-body text-sm text-stone hover:text-bark transition-colors"
             >
-              关于本站
+              About
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -404,7 +404,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="font-body text-sm font-semibold text-terracotta hover:text-terracotta-dark transition-colors"
             >
-              爱发电 &rarr;
+              Afdian &rarr;
             </a>
           </div>
         </div>

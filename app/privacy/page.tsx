@@ -5,8 +5,8 @@ export default function PrivacyPage() {
     <div className="min-h-screen bg-field-paper bg-paper-texture">
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; 返回首页</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">隐私政策</h1>
+          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
+          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Privacy Policy</h1>
         </div>
         <div className="field-divider mt-6" />
       </header>
@@ -15,42 +15,42 @@ export default function PrivacyPage() {
         <div className="space-y-8">
           <section>
             <p className="font-body text-bark-light leading-relaxed">
-              Solarpunk 生存指南（以下简称"本站"）非常重视用户的隐私保护。本隐私政策说明了我们如何收集、使用和保护您的信息。使用本站即表示您同意本隐私政策的条款。
+              The Solarpunk Survival Guide ("the Site") values your privacy. This Privacy Policy explains how we collect, use, and protect your information. By using the Site, you agree to the terms of this Privacy Policy.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-bark">我们收集的信息</h2>
+            <h2 className="font-display text-xl font-semibold text-bark">Information We Collect</h2>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              本站通过 Google Analytics 收集匿名的访问统计数据，包括页面浏览量、访问时长、大致地理位置和设备类型等。这些数据无法用于识别个人身份，仅用于分析网站流量和优化内容。
+              The Site collects anonymous visit statistics through Google Analytics, including page views, visit duration, approximate geographic location, and device type. This data cannot be used to identify individuals and is only used for analyzing site traffic and optimizing content.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-bark">Cookie 使用</h2>
+            <h2 className="font-display text-xl font-semibold text-bark">Cookie Usage</h2>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              本站使用 Google Analytics 的 Cookie 来追踪访问数据。您可以在浏览器设置中禁用 Cookie，但可能会影响部分功能的正常使用。我们不会使用 Cookie 来收集个人身份信息或进行广告追踪。
+              The Site uses Google Analytics cookies to track visit data. You can disable cookies in your browser settings, but this may affect the normal functionality of some features. We do not use cookies to collect personally identifiable information or for ad tracking.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-bark">第三方服务</h2>
+            <h2 className="font-display text-xl font-semibold text-bark">Third-Party Services</h2>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              本站使用 Google Analytics 和 Google Tag Manager 进行流量分析。这些服务的隐私政策请参考 Google 官方网站。本站包含指向爱发电等第三方平台的链接，我们对这些外部网站的隐私实践不承担任何责任。
+              The Site uses Google Analytics and Google Tag Manager for traffic analysis. Please refer to Google's official website for the privacy policies of these services. The Site contains links to third-party platforms such as Afdian. We are not responsible for the privacy practices of these external websites.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-bark">数据安全</h2>
+            <h2 className="font-display text-xl font-semibold text-bark">Data Security</h2>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              本站采取合理的技术手段保护数据安全。由于本站仅收集匿名统计数据，不存储任何用户个人身份信息，因此不存在个人数据泄露的风险。
+              The Site takes reasonable technical measures to protect data security. Since the Site only collects anonymous statistical data and does not store any personally identifiable user information, there is no risk of personal data breaches.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-bark">联系我们</h2>
+            <h2 className="font-display text-xl font-semibold text-bark">Contact Us</h2>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              如果您对本隐私政策有任何疑问，请通过爱发电平台联系我们。
+              If you have any questions about this Privacy Policy, please contact us via Afdian.
             </p>
           </section>
         </div>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
       </main>
 
       <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk 生存指南 · <a href="/" className="hover:text-bark transition-colors">返回首页</a> · <a href="/terms" className="hover:text-bark transition-colors">使用条款</a></p>
+        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/" className="hover:text-bark transition-colors">Back to Home</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
       </footer>
     </div>
   );

@@ -2,27 +2,27 @@
 
 export default function ResourcesPage() {
   const resources = [
-    { name: '木材', type: '基础建材', locations: '所有岛屿', tool: '石斧/铁斧', uses: '建筑、工具、燃料' },
-    { name: '石头', type: '基础建材', locations: '所有岛屿', tool: '石镐/铁镐', uses: '建筑材料、熔炉、道路' },
-    { name: '纤维', type: '基础材料', locations: '所有岛屿', tool: '手工采集', uses: '布料、绳索、基础工具' },
-    { name: '铁矿', type: '金属矿物', locations: '草原、荒漠岛屿', tool: '铁镐以上', uses: '铁锭 → 工具、机械、结构件' },
-    { name: '铜矿', type: '金属矿物', locations: '草原浮岛群为主', tool: '铁镐以上', uses: '铜线、电路板、电气元件' },
-    { name: '金矿', type: '稀有矿物', locations: '荒漠、极地岛屿', tool: '高级镐', uses: '高级电路、装饰、贸易' },
-    { name: '硅砂', type: '工业原料', locations: '荒漠、沙滩区域', tool: '铲子', uses: '玻璃、硅片、太阳能板' },
-    { name: '水晶矿', type: '特殊矿物', locations: '水晶洞穴', tool: '高级镐', uses: '光学元件、高级能源设备' },
-    { name: '钛矿', type: '高级金属', locations: '云顶高地', tool: '顶级镐', uses: '钛合金 → 飞船引擎、高级装甲' },
-    { name: '能源核心碎片', type: '稀有材料', locations: '云顶高地', tool: '特殊采集', uses: '飞船引擎核心、终极设备' },
-    { name: '煤炭', type: '燃料', locations: '地下矿脉', tool: '铁镐', uses: '熔炉燃料、早期能源' },
-    { name: '石油', type: '燃料/原料', locations: '特定岛屿地质区', tool: '钻井设备', uses: '高级燃料、塑料、化工原料' },
+    { name: 'Wood', type: 'Basic Building Material', locations: 'All islands', tool: 'Stone/Iron Axe', uses: 'Construction, tools, fuel' },
+    { name: 'Stone', type: 'Basic Building Material', locations: 'All islands', tool: 'Stone/Iron Pickaxe', uses: 'Building material, furnace, roads' },
+    { name: 'Fiber', type: 'Basic Material', locations: 'All islands', tool: 'Hand gathering', uses: 'Cloth, rope, basic tools' },
+    { name: 'Iron Ore', type: 'Metal Ore', locations: 'Grassland, desert islands', tool: 'Iron Pickaxe+', uses: 'Iron Ingot → tools, machinery, structural parts' },
+    { name: 'Copper Ore', type: 'Metal Ore', locations: 'Mainly Grassland Archipelago', tool: 'Iron Pickaxe+', uses: 'Copper wire, circuit boards, electrical components' },
+    { name: 'Gold Ore', type: 'Rare Mineral', locations: 'Desert, polar islands', tool: 'Advanced Pickaxe', uses: 'Advanced circuits, decoration, trade' },
+    { name: 'Silica Sand', type: 'Industrial Raw Material', locations: 'Desert, beach areas', tool: 'Shovel', uses: 'Glass, silicon wafers, solar panels' },
+    { name: 'Crystal Ore', type: 'Special Mineral', locations: 'Crystal Caverns', tool: 'Advanced Pickaxe', uses: 'Optical components, advanced energy equipment' },
+    { name: 'Titanium Ore', type: 'Advanced Metal', locations: 'Skyridge Highlands', tool: 'Top-tier Pickaxe', uses: 'Titanium alloy → airship engines, advanced armor' },
+    { name: 'Energy Core Fragments', type: 'Rare Material', locations: 'Skyridge Highlands', tool: 'Special gathering', uses: 'Airship engine core, ultimate equipment' },
+    { name: 'Coal', type: 'Fuel', locations: 'Underground veins', tool: 'Iron Pickaxe', uses: 'Furnace fuel, early energy' },
+    { name: 'Oil', type: 'Fuel/Raw Material', locations: 'Specific island geological zones', tool: 'Drilling Equipment', uses: 'Advanced fuel, plastic, chemical raw materials' },
   ];
 
   return (
     <div className="min-h-screen bg-field-paper bg-paper-texture">
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; 返回首页</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">资源采集与分布</h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">全岛资源类型、分布规律与高效采集路线指南</p>
+          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
+          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Resource Gathering & Distribution</h1>
+          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">Complete resource types, distribution patterns & efficient gathering route guide</p>
         </div>
         <div className="field-divider mt-6" />
       </header>
@@ -31,32 +31,32 @@ export default function ResourcesPage() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           <div className="flex-1 lg:max-w-[65%] space-y-12">
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark">资源系统概述</h2>
+              <h2 className="font-display text-2xl font-bold text-bark">Resource System Overview</h2>
               <p className="font-body text-bark-light leading-relaxed mt-4">
-                资源采集是 Solarpunk 一切活动的根基。从建造第一个庇护所需要的木材和石头，到打造飞船引擎核心所需的钛合金和能源核心碎片，每一种资源都有其特定的生成地点、采集工具要求和最佳获取时机。理解资源的分布规律和采集效率，可以帮你大幅缩短从"资源紧缺"到"物质充裕"之间的发展时间。
+                Resource gathering is the foundation of all activities in Solarpunk. From the wood and stone needed for your first shelter to the titanium alloy and energy core fragments required for an airship engine core, every resource has its specific spawn location, gathering tool requirement, and optimal acquisition timing. Understanding resource distribution patterns and gathering efficiency can dramatically shorten your progression from "resource-starved" to "material-abundant."
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                游戏中的资源按照稀有度和使用阶段大致可以分为四个层次：基础资源（木材、石头、纤维）在所有岛屿均可采集，是建造和维护基础设施的永久消耗品；中级资源（铁、铜、煤炭）主要分布在 L2 及以上级别的岛屿，是工业化和自动化的基础；高级资源（金、硅砂、水晶）仅出现在特定生物群系，需要专门的前往和采集计划；终极资源（钛矿、能源核心碎片）分布在高危岛屿上，代表了游戏的最先进技术层级。
+                Resources in the game can be roughly divided into four tiers by rarity and usage stage: Basic Resources (Wood, Stone, Fiber) can be gathered on all islands and are permanent consumables for construction and infrastructure maintenance; Intermediate Resources (Iron, Copper, Coal) are mainly distributed on L2-tier and above islands — the foundation for industrialization and automation; Advanced Resources (Gold, Silica Sand, Crystal) only appear in specific biomes and require dedicated travel and gathering plans; Ultimate Resources (Titanium Ore, Energy Core Fragments) are distributed on high-danger islands, representing the game's most advanced technology tier.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                采集效率的提升有两条路径：使用更高级的工具（石质 → 铁质 → 合金）直接提升每次采集的数量和速度；以及建立自动化采集网络让机器持续运转。前者适合游戏早期和探索阶段，后者是后期大规模生产的必要手段。建议的推进策略是：用手动采集积累首批中级金属 → 建造熔炉和基础自动化线 → 用自动化生产反哺采集 → 解锁更高级的工具和采集设备 → 循环往复。
+                Gathering efficiency can be improved through two paths: using higher-tier tools (Stone → Iron → Alloy) to directly increase the quantity and speed of each gathering action; and establishing automated gathering networks for continuous machine operation. The former suits early game and exploration phases, while the latter is essential for large-scale production in late game. The recommended progression strategy: accumulate your first batch of intermediate metals through manual gathering → build Furnaces and basic automation lines → use automated production to feed back into gathering → unlock higher-tier tools and gathering equipment → repeat the cycle.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                对于跨岛屿的资源获取，效率最高的方案是在每个主要资源岛屿上建立专业化采集前哨站。例如在草原浮岛群建立铜矿和铁矿采集站，在荒漠岛屿建立硅砂和金矿采集站。通过飞船或传送带将这些前哨站的产出汇总到主基地，进行统一的冶炼、加工和生产。这种分布式的采集网络是目前公认的大型基地资源管理最佳实践。每种资源的采集频率和消耗速度不同，定期审视你的资源储备数据有助于及时调整各前哨站的产能分配。
+                For cross-island resource acquisition, the most efficient approach is to establish specialized gathering outposts on each major resource island. For example: copper and iron mining outposts in the Grassland Archipelago, silica sand and gold mining outposts on desert islands. Funnel the outputs of these outposts to your main base via airship or conveyor belt for unified smelting, processing, and production. This distributed gathering network is currently recognized as the best practice for large-scale base resource management. Each resource has different gathering frequency and consumption rates — regularly reviewing your resource stockpile data helps adjust the production allocation of each outpost in a timely manner.
               </p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">资源速查表</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Resource Quick Reference</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-moss/30">
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">资源</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">类型</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">分布地点</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">采集工具</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">主要用途</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Resource</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Type</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Locations</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Tool</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Primary Uses</th>
                     </tr>
                   </thead>
                   <tbody className="font-body text-bark-light">
@@ -72,28 +72,28 @@ export default function ResourcesPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="font-body text-xs text-stone mt-4 italic">* 资源分布信息基于当前版本游戏数据，可能随版本更新调整。</p>
+              <p className="font-body text-xs text-stone mt-4 italic">* Resource distribution info is based on current game version data and may adjust with updates.</p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">常见问题</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Frequently Asked Questions</h2>
               <div className="space-y-2">
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">初始岛屿的资源够用吗？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Are the starting island\'s resources enough?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    初始岛屿的资源足够支撑你建立基础基地和修复飞船，但仅限于基础资源。木材、石头和纤维充足；少量铁矿石可以通过探索找到；但铜矿、金矿等中级资源在初始岛屿上极为稀少。你需要尽快修复飞船前往 L2 级别的草原浮岛群获取更丰富的矿物资源。如果你计划将初始岛屿作为长期主基地，则必须建立跨岛屿的资源运输网络。
+                    The starting island has enough resources to support building a basic base and repairing your airship, but only for basic resources. Wood, Stone, and Fiber are abundant; small amounts of Iron Ore can be found through exploration; but Intermediate resources like Copper Ore and Gold Ore are extremely scarce on the starting island. You need to repair your airship as soon as possible to reach L2-tier Grassland Archipelago islands for richer mineral resources. If you plan to keep the starting island as your long-term main base, you must establish a cross-island resource transport network.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">如何高效采集稀有矿物？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How do I efficiently gather rare minerals?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    首先锁定矿物的主要分布岛屿（如金矿在荒漠和极地岛屿，钛矿在云顶高地）。在目标岛屿建立前哨站，包含供电、住宿和基础仓储设施。使用你能制作的最顶级采集工具。如果条件允许，建造采矿机和传送带系统实现自动化采集。对于无法自动采集的稀有资源（如能源核心碎片），建议准备充足的补给和高级防御装备，因为这些资源通常分布在最危险的岛屿区域。
+                    First, identify the mineral's primary distribution island (e.g., Gold in desert and polar islands, Titanium in Skyridge Highlands). Establish an outpost on the target island with power, shelter, and basic storage facilities. Use the highest-tier gathering tool you can craft. If conditions allow, build Mining Machines and conveyor belt systems for automated gathering. For rare resources that cannot be auto-gathered (such as Energy Core Fragments), prepare ample supplies and high-tier defensive gear, as these resources are typically found in the most dangerous island regions.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">矿物资源会再生吗？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Do mineral resources respawn?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    大多数地表矿脉在采集后不会自动再生。这也是为什么资源管理在 Solarpunk 中如此重要——如果你将某个岛屿的矿物全部采光，就需要前往新的岛屿寻找替代来源。不过，某些深层矿脉（需要使用采矿机开采的类型）可能具有缓慢的再生率（社区对此有不同观察，可能存在版本差异）。为了长期发展的可持续性，建议同时开发多个资源岛屿并合理分配采集强度，避免单一矿源的过度开采。
+                    Most surface mineral veins do not automatically respawn after being mined. This is why resource management is so important in Solarpunk — if you mine all the minerals on one island, you'll need to travel to new islands for alternative sources. However, certain deep mineral veins (those requiring Mining Machines for extraction) may have slow regeneration rates (the community has varying observations on this, which may differ between versions). For long-term sustainability, we recommend simultaneously developing multiple resource islands and distributing gathering intensity appropriately to avoid over-exploitation of any single mineral source.
                   </p>
                 </details>
               </div>
@@ -102,18 +102,18 @@ export default function ResourcesPage() {
 
           <aside className="lg:w-[30%] space-y-10 shrink-0">
             <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">相关攻略</h3>
+              <h3 className="font-display text-base font-semibold text-bark mb-4">Related Guides</h3>
               <div className="space-y-2 font-body text-sm">
-                <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">世界地图</a>
-                <a href="/crafting" className="block text-moss hover:text-moss-dark transition-colors">制作配方大全</a>
-                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">自动化系统指南</a>
+                <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">World Map</a>
+                <a href="/crafting" className="block text-moss hover:text-moss-dark transition-colors">Crafting Recipes</a>
+                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">Automation System Guide</a>
               </div>
             </div>
 
             <div className="bg-moss-light/50 border border-moss/20 p-6">
-              <h3 className="font-display text-sm font-semibold text-moss-dark mb-2">采集效率提示</h3>
+              <h3 className="font-display text-sm font-semibold text-moss-dark mb-2">Gathering Efficiency Tip</h3>
               <p className="font-body text-xs text-bark-light leading-relaxed">
-                使用更高级的工具可以将单次采集产出提升 40%-80%（社区估算）。在开始大规模采集前先升级工具，事半功倍。
+                Using higher-tier tools can boost per-action gathering yield by 40%-80% (community estimate). Upgrade your tools before starting large-scale gathering — it's an investment that pays for itself.
               </p>
             </div>
           </aside>
@@ -121,7 +121,7 @@ export default function ResourcesPage() {
         <div className="field-divider mt-16" />
       </main>
       <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk 生存指南 · <a href="/privacy" className="hover:text-bark transition-colors">隐私政策</a> · <a href="/terms" className="hover:text-bark transition-colors">使用条款</a></p>
+        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/privacy" className="hover:text-bark transition-colors">Privacy Policy</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
       </footer>
     </div>
   );

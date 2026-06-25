@@ -2,37 +2,37 @@
 
 export default function CraftingPage() {
   const recipes = [
-    { name: '基础工作台', materials: '木材 x10 + 石头 x5', station: '手工制作', unlock: '默认解锁', tier: 1, category: '基础' },
-    { name: '石斧', materials: '木材 x4 + 石头 x3 + 纤维 x2', station: '基础工作台', unlock: '默认解锁', tier: 1, category: '工具' },
-    { name: '石镐', materials: '木材 x4 + 石头 x4 + 纤维 x2', station: '基础工作台', unlock: '默认解锁', tier: 1, category: '工具' },
-    { name: '篝火', materials: '石头 x5 + 木材 x8', station: '手工制作', unlock: '默认解锁', tier: 1, category: '生存' },
-    { name: '木墙', materials: '木材 x6 + 纤维 x2', station: '基础工作台', unlock: '默认解锁', tier: 1, category: '建造' },
-    { name: '床铺', materials: '木材 x8 + 纤维 x6 + 布料 x4', station: '基础工作台', unlock: '默认解锁', tier: 1, category: '生存' },
-    { name: '雨水收集器', materials: '木材 x12 + 铁锭 x2 + 布料 x3', station: '基础工作台', unlock: '基础水源研究', tier: 2, category: '生存' },
-    { name: '太阳能电池板', materials: '硅片 x4 + 铜线 x8 + 玻璃 x2', station: '电子工作台', unlock: '基础电力研究', tier: 2, category: '能源' },
-    { name: '风力发电机', materials: '铁锭 x8 + 铜线 x6 + 齿轮 x3', station: '机械工作台', unlock: '风能技术研究', tier: 2, category: '能源' },
-    { name: '研究台', materials: '木材 x15 + 铁锭 x5 + 铜线 x3', station: '基础工作台', unlock: '基础科学', tier: 1, category: '科技' },
-    { name: '熔炉', materials: '石头 x20 + 铁锭 x4', station: '基础工作台', unlock: '基础冶炼', tier: 1, category: '生产' },
-    { name: '自动浇水系统', materials: '铁管 x6 + 水泵 x1 + 电路板 x2', station: '高级工作台', unlock: '自动农耕研究', tier: 3, category: '农耕' },
-    { name: '传送带', materials: '铁锭 x4 + 齿轮 x2 + 橡胶 x1', station: '机械工作台', unlock: '基础自动化', tier: 2, category: '自动化' },
-    { name: '工业熔炉', materials: '钢锭 x15 + 耐火砖 x8 + 温度传感器 x2', station: '高级工作台', unlock: '工业冶炼', tier: 3, category: '生产' },
-    { name: '飞船引擎核心', materials: '钛合金 x20 + 能源核心 x1 + 高级电路 x5', station: '飞船装配台', unlock: '引擎技术 III', tier: 4, category: '飞船' },
+    { name: 'Basic Workbench', materials: 'Wood x10 + Stone x5', station: 'Hand Crafting', unlock: 'Default Unlock', tier: 1, category: 'Basic' },
+    { name: 'Stone Axe', materials: 'Wood x4 + Stone x3 + Fiber x2', station: 'Basic Workbench', unlock: 'Default Unlock', tier: 1, category: 'Tool' },
+    { name: 'Stone Pickaxe', materials: 'Wood x4 + Stone x4 + Fiber x2', station: 'Basic Workbench', unlock: 'Default Unlock', tier: 1, category: 'Tool' },
+    { name: 'Campfire', materials: 'Stone x5 + Wood x8', station: 'Hand Crafting', unlock: 'Default Unlock', tier: 1, category: 'Survival' },
+    { name: 'Wood Wall', materials: 'Wood x6 + Fiber x2', station: 'Basic Workbench', unlock: 'Default Unlock', tier: 1, category: 'Building' },
+    { name: 'Bed', materials: 'Wood x8 + Fiber x6 + Cloth x4', station: 'Basic Workbench', unlock: 'Default Unlock', tier: 1, category: 'Survival' },
+    { name: 'Rain Collector', materials: 'Wood x12 + Iron Ingot x2 + Cloth x3', station: 'Basic Workbench', unlock: 'Basic Water Source Research', tier: 2, category: 'Survival' },
+    { name: 'Solar Panel', materials: 'Silicon Wafer x4 + Copper Wire x8 + Glass x2', station: 'Electronics Workbench', unlock: 'Basic Power Research', tier: 2, category: 'Energy' },
+    { name: 'Wind Turbine', materials: 'Iron Ingot x8 + Copper Wire x6 + Gear x3', station: 'Mechanical Workbench', unlock: 'Wind Tech Research', tier: 2, category: 'Energy' },
+    { name: 'Research Station', materials: 'Wood x15 + Iron Ingot x5 + Copper Wire x3', station: 'Basic Workbench', unlock: 'Basic Science', tier: 1, category: 'Tech' },
+    { name: 'Furnace', materials: 'Stone x20 + Iron Ingot x4', station: 'Basic Workbench', unlock: 'Basic Smelting', tier: 1, category: 'Production' },
+    { name: 'Auto Watering System', materials: 'Iron Pipe x6 + Water Pump x1 + Circuit Board x2', station: 'Advanced Workbench', unlock: 'Auto Farming Research', tier: 3, category: 'Farming' },
+    { name: 'Conveyor Belt', materials: 'Iron Ingot x4 + Gear x2 + Rubber x1', station: 'Mechanical Workbench', unlock: 'Basic Automation', tier: 2, category: 'Automation' },
+    { name: 'Industrial Furnace', materials: 'Steel Ingot x15 + Fire Brick x8 + Temp Sensor x2', station: 'Advanced Workbench', unlock: 'Industrial Smelting', tier: 3, category: 'Production' },
+    { name: 'Airship Engine Core', materials: 'Titanium Alloy x20 + Energy Core x1 + Advanced Circuit x5', station: 'Airship Assembly Station', unlock: 'Engine Tech III', tier: 4, category: 'Airship' },
   ];
 
   const tiers = [
-    { label: 'Tier 1 — 基础科技', desc: '默认解锁或通过基础研究即可获得。使用基础工作台或手工制作，材料为初始岛屿可获取的基础资源。' },
-    { label: 'Tier 2 — 中级科技', desc: '需要完成中级研究，部分材料需要跨岛屿采集。工作台升级为电子/机械工作台，产物开始涉及自动化组件。' },
-    { label: 'Tier 3 — 高级科技', desc: '需要高级研究解锁，涉及多岛屿资源链。使用高级或专业工作台，产物通常用于构建自动化系统和高级设施。' },
-    { label: 'Tier 4 — 终极科技', desc: '游戏末期解锁，需要稀有材料和跨岛屿协作生产。产物是游戏中最强大的设备和组件，如飞船引擎核心和高级能源系统。' },
+    { label: 'Tier 1 — Basic Tech', desc: 'Default unlock or obtainable through basic research. Crafted using a Basic Workbench or by hand with resources available on the starting island.' },
+    { label: 'Tier 2 — Intermediate Tech', desc: 'Requires completing intermediate research; some materials require cross-island gathering. Workbench upgrades to Electronics/Mechanical Workbench; products begin involving automation components.' },
+    { label: 'Tier 3 — Advanced Tech', desc: 'Requires advanced research unlock, involving multi-island resource chains. Uses Advanced or specialized workbenches; products are typically used for building automation systems and advanced facilities.' },
+    { label: 'Tier 4 — Ultimate Tech', desc: 'Late-game unlock requiring rare materials and cross-island collaborative production. Products are the most powerful equipment and components in the game, such as Airship Engine Cores and advanced energy systems.' },
   ];
 
   return (
     <div className="min-h-screen bg-field-paper bg-paper-texture">
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; 返回首页</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">制作配方大全</h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">从基础工具到飞船引擎核心的完整配方速查表</p>
+          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
+          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Crafting Recipes</h1>
+          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">Complete recipe reference from basic tools to Airship Engine Cores</p>
         </div>
         <div className="field-divider mt-6" />
       </header>
@@ -40,20 +40,20 @@ export default function CraftingPage() {
       <main className="max-w-6xl mx-auto px-4 lg:px-8 py-8">
         <div className="space-y-12">
           <section>
-            <h2 className="font-display text-2xl font-bold text-bark">配方概述</h2>
+            <h2 className="font-display text-2xl font-bold text-bark">Recipe Overview</h2>
             <p className="font-body text-bark-light leading-relaxed mt-4">
-              制作系统是 Solarpunk 的核心玩法之一。游戏中几乎所有物品都需要通过制作来获得，从最基础的石斧到复杂的飞船引擎核心，每个物品都有其特定的制作配方。配方系统按照科技等级（Tier）划分为四个阶段，随着你解锁更高级的研究，可用的制作配方也会逐渐增多。理解制作系统的运作规律，可以帮助你更高效地规划资源采集和基地发展路线。
+              The crafting system is one of Solarpunk's core gameplay pillars. Almost every item in the game must be obtained through crafting, from the most basic Stone Axe to complex Airship Engine Cores — each item has its specific crafting recipe. The recipe system is divided into four stages by tech tier, and as you unlock more advanced research, the pool of available recipes grows progressively larger. Understanding how the crafting system works helps you plan resource gathering and base development more efficiently.
             </p>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              在 Solarpunk 中，制作需要满足三个条件：拥有对应的配方、备齐所需材料、在正确的工作台进行操作。不同等级的物品需要不同等级的工作台：基础物品可使用手工制作或基础工作台，中级物品需要电子或机械工作台，高级物品则需要专用装配台。本页面收集了游戏中最常用和最重要的配方，按照功能类别和科技等级进行分类，方便玩家快速查找。所有材料数量均为社区估算值，实际游戏中的配方可能因版本更新而有所调整。
+              In Solarpunk, crafting requires three conditions: having the corresponding recipe unlocked, gathering all required materials, and using the correct workbench. Different tiers of items require different levels of workbenches: basic items can be crafted by hand or at the Basic Workbench, intermediate items require Electronics or Mechanical Workbenches, and advanced items need specialized assembly stations. This page collects the most commonly used and important recipes in the game, categorized by function and tech tier for easy lookup. All material quantities are community estimates; actual in-game recipes may adjust with version updates.
             </p>
             <p className="font-body text-bark-light leading-relaxed mt-3">
-              每个 Tier 等级之间存在明显的技术和材料跳变。从 Tier 1 到 Tier 2 的跨越主要涉及金属加工和基础电力的引入，此时你需要开始建立跨岛屿的物流来获取铜矿和铁矿。Tier 2 到 Tier 3 则标志着你的基地进入工业化阶段，自动化生产开始取代手动操作。而 Tier 4 则是游戏的终极目标，只有建立了完整的自动化生产链和跨岛屿物流网络，才能稳定生产这些顶级装备。
+              Each tier features significant jumps in technology and materials. Moving from Tier 1 to Tier 2 primarily involves introducing metal processing and basic electricity — you'll need to establish cross-island logistics to acquire copper and iron ore. Tier 2 to Tier 3 marks your base entering the industrial phase, where automated production begins replacing manual operation. Tier 4 represents the game's ultimate goal — only by establishing complete automated production chains and cross-island logistics networks can you reliably produce these top-tier items.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-bark mb-6">科技等级说明</h2>
+            <h2 className="font-display text-2xl font-bold text-bark mb-6">Tech Tier Guide</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {tiers.map((t, i) => (
                 <div key={i} className="journal-card p-5">
@@ -65,16 +65,16 @@ export default function CraftingPage() {
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-bark mb-6">配方速查表</h2>
+            <h2 className="font-display text-2xl font-bold text-bark mb-6">Recipe Quick Reference</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b-2 border-moss/30">
-                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">物品名称</th>
-                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">所需材料</th>
-                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">制作台</th>
-                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">解锁条件</th>
-                    <th className="text-center py-3 px-3 font-display font-semibold text-bark">等级</th>
+                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">Item</th>
+                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">Materials</th>
+                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">Station</th>
+                    <th className="text-left py-3 px-3 font-display font-semibold text-bark">Unlock</th>
+                    <th className="text-center py-3 px-3 font-display font-semibold text-bark">Tier</th>
                   </tr>
                 </thead>
                 <tbody className="font-body text-bark-light">
@@ -99,35 +99,35 @@ export default function CraftingPage() {
                 </tbody>
               </table>
             </div>
-            <p className="font-body text-xs text-stone mt-4 italic">* 材料数量为社区估算值，实际游戏内数据可能因版本更新有所变动</p>
+            <p className="font-body text-xs text-stone mt-4 italic">* Material quantities are community estimates; actual in-game data may vary with version updates</p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-bark mb-6">材料获取指南</h2>
+            <h2 className="font-display text-2xl font-bold text-bark mb-6">Material Gathering Guide</h2>
             <p className="font-body text-bark-light leading-relaxed">
-              制作配方中涉及的各类材料分布在不同的浮空岛屿上。基础材料如木材、石头和纤维在所有岛屿上均可采集。金属矿物（铁、铜、金等）则主要集中在特定的矿区岛屿，通常需要通过飞船解锁后才能抵达。稀有材料如钛合金和能源核心的需求量虽然不大，但获取难度较高，往往需要多个岛屿之间的协作生产和复杂的加工工序。建议在建立基础基地后，优先完善跨岛屿运输网络，确保材料供应链的稳定运转。更多材料详情请参考资源采集页面。
+              The various materials involved in crafting recipes are distributed across different floating islands. Basic materials like wood, stone, and fiber can be gathered on all islands. Metal ores (iron, copper, gold, etc.) are concentrated in specific mining islands, typically only reachable after unlocking airship travel. Rare materials like titanium alloy and energy cores are needed in smaller quantities but are harder to obtain, often requiring collaborative production across multiple islands and complex processing steps. After establishing your basic base, prioritize building your cross-island transport network to ensure a stable material supply chain. For more material details, refer to the Resource Gathering page.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-bark mb-6">常见问题</h2>
+            <h2 className="font-display text-2xl font-bold text-bark mb-6">Frequently Asked Questions</h2>
             <div className="space-y-2">
               <details className="journal-card p-4 group cursor-pointer">
-                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">如何解锁更多制作配方？</summary>
+                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How do I unlock more crafting recipes?</summary>
                 <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                  制作配方通过研究台进行研究来解锁。建造研究台后，按照科技树逐步研究各项技术即可解锁对应配方。建议优先研究"基础电力"和"基础自动化"，这两条分支会解锁大量中级配方。随着游戏进程推进，你会在更高级的岛屿上发现独特的研究材料，用于解锁高级和终极科技配方。
+                  Crafting recipes are unlocked by conducting research at the Research Station. After building a Research Station, follow the tech tree to progressively research each technology to unlock corresponding recipes. We recommend prioritizing "Basic Power" and "Basic Automation" research — these two branches unlock a large number of intermediate recipes. As the game progresses, you'll discover unique research materials on higher-tier islands used to unlock advanced and ultimate tech recipes.
                 </p>
               </details>
               <details className="journal-card p-4 group cursor-pointer">
-                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">为什么有些配方显示灰色无法制作？</summary>
+                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Why are some recipes grayed out and can't be crafted?</summary>
                 <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    可能的原因有三个：尚未解锁对应配方、当前工作台等级不足、或者缺少必要材料。请先确认你已通过研究台解锁了该配方，然后检查你当前使用的工作台是否为配方要求的工作台类型。如果以上条件都满足，请检查材料种类和数量是否齐全。某些高级配方还需要特定的中间产物，如电路板和合金锭。
+                  There are three possible reasons: the recipe hasn't been unlocked yet, the current workbench tier is insufficient, or required materials are missing. First, confirm you've unlocked the recipe through the Research Station, then check if your current workbench matches the type required by the recipe. If both conditions are met, check whether all materials are present in the correct types and quantities. Some advanced recipes also require specific intermediate products like circuit boards and alloy ingots.
                 </p>
               </details>
               <details className="journal-card p-4 group cursor-pointer">
-                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">材料数量不够时可以用替代品吗？</summary>
+                <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Can I use substitute materials when I don't have enough?</summary>
                 <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                  游戏中的制作配方对材料的要求是固定的，目前不支持使用替代材料。不过，某些高级配方中的中间产物（如铁锭和钢锭）可以通过多种方式获取：手动冶炼、自动化生产线或与其他岛屿进行交易。在资源紧张时，建议优先建立跨岛屿交易系统，用富余资源换取所缺材料，而不是将时间浪费在低效的采集上。
+                  The game's crafting recipes have fixed material requirements and do not currently support substitute materials. However, certain intermediate products in advanced recipes (such as iron and steel ingots) can be obtained through multiple methods: manual smelting, automated production lines, or trading with other islands. When resources are tight, it's recommended to prioritize building a cross-island trading system, exchanging surplus resources for the materials you lack rather than wasting time on inefficient manual gathering.
                 </p>
               </details>
             </div>
@@ -136,7 +136,7 @@ export default function CraftingPage() {
         <div className="field-divider mt-16" />
       </main>
       <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk 生存指南 · <a href="/privacy" className="hover:text-bark transition-colors">隐私政策</a> · <a href="/terms" className="hover:text-bark transition-colors">使用条款</a></p>
+        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/privacy" className="hover:text-bark transition-colors">Privacy Policy</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
       </footer>
     </div>
   );

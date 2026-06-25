@@ -3,75 +3,75 @@
 export default function GuidesPage() {
   const guides = [
     {
-      title: '新手生存完全指南',
-      category: '基础生存',
+      title: 'Complete Beginner Survival Guide',
+      category: 'Basic Survival',
       tagType: 'moss' as const,
-      desc: '从登陆浮空岛的第一天到建立自给自足的基地，手把手带你走完 Solarpunk 前 10 小时。本指南涵盖了所有新玩家必须掌握的基础知识：初始资源采集优先级、工具制作顺序、第一晚生存策略、基础能源系统搭建以及如何快速解锁关键科技节点。我们将详细讲解每个阶段的资源分配最优方案，帮助你在最短时间内站稳脚跟。特别适合第一次接触开放世界生存建造类游戏的玩家，内容深入浅出，配合大量实战截图和路线指引，让你从一开始就走在正确的轨道上。',
+      desc: 'From landing on your first floating island to building a self-sufficient base — a step-by-step walkthrough of your first 10 hours in Solarpunk. This guide covers everything a new player needs to know: resource gathering priorities, tool crafting order, survival strategies for the first night, basic energy system setup, and how to quickly unlock key tech milestones. We explain the optimal resource allocation for each stage in detail, helping you get established in the shortest time possible. Perfect for players new to open-world survival builders, with clear explanations supported by gameplay screenshots and navigation tips to keep you on the right track from the start.',
       readTime: '15',
-      difficulty: '入门',
+      difficulty: 'Beginner',
       href: '/beginners',
     },
     {
-      title: '飞船建造与自定义教程',
-      category: '飞船系统',
+      title: 'Airship Building & Customization Tutorial',
+      category: 'Airship System',
       tagType: 'terracotta' as const,
-      desc: '详解飞行器建造系统：引擎选择、甲板布局、燃料管理以及如何在云层之上建立移动基地。飞船是 Solarpunk 游戏中最具标志性的系统之一，拥有一艘精心打造的飞船不仅能极大地提升你的探索效率，还能作为一座完全可自定义的移动基地。本教程涵盖从基础飞船修复到终极飞行堡垒的全部内容，包括引擎性能对比、最佳甲板布局方案、仓库与居住区规划技巧、燃料消耗计算与优化策略、武器装备安装指南以及多艘飞船的协同管理方案。无论你是一位休闲探索者还是追求极限效率的硬核玩家，都能从中获得宝贵的建造灵感。',
+      desc: 'Deep dive into the airship building system: engine selection, deck layout, fuel management, and how to build a mobile base above the clouds. The airship is one of the most iconic systems in Solarpunk — a well-designed ship not only dramatically improves your exploration efficiency but also serves as a fully customizable mobile base. This tutorial covers everything from basic airship repair to building the ultimate flying fortress, including engine performance comparisons, optimal deck layout strategies, warehouse and living quarters planning, fuel consumption calculations and optimization, weapon installation guides, and multi-airship fleet management. Whether you are a casual explorer or a min-maxing hardcore player, you will find valuable building inspiration here.',
       readTime: '12',
-      difficulty: '进阶',
+      difficulty: 'Advanced',
       href: '/airship',
     },
     {
-      title: '全自动生产线搭建指南',
-      category: '自动化',
+      title: 'Full Automation Production Line Guide',
+      category: 'Automation',
       tagType: 'terracotta' as const,
-      desc: '从手动采集到全自动流水线的完整进阶路线。涵盖传送带布局、自动分类系统、工业熔炉阵列、无人机运输网络配置以及多岛屿资源调度策略。自动化是 Solarpunk 后期玩法的核心支柱，一个设计精良的自动化基地可以将你的生产效率提升数十倍，彻底解放双手。本指南以循序渐进的方式带你理解每一种自动化组件的特性和最佳使用场景，通过多个实战案例展示从简单传送带到复杂多岛屿物流网络的演进过程。我们还会分享社区验证的高效布局蓝图，让你可以直接复制到自己的存档中。',
+      desc: 'A complete progression path from manual gathering to fully automated assembly lines. Covers conveyor belt layouts, automatic sorting systems, industrial furnace arrays, drone transport network configuration, and multi-island resource scheduling strategies. Automation is the core pillar of late-game Solarpunk gameplay — a well-designed automated base can multiply your production efficiency many times over, freeing your hands entirely. This guide takes a progressive approach to understanding each automation component and its optimal use cases, with multiple real-world examples showing the evolution from simple conveyor belts to complex multi-island logistics networks. We also share community-verified efficient layout blueprints you can directly copy into your save file.',
       readTime: '20',
-      difficulty: '进阶',
+      difficulty: 'Advanced',
       href: '/automation',
     },
     {
-      title: '农耕系统完全解析',
-      category: '农耕',
+      title: 'Farming System Complete Breakdown',
+      category: 'Farming',
       tagType: 'moss' as const,
-      desc: '从第一块耕地的开垦到大型自动化农场的建立，全面解析 Solarpunk 的农耕系统。包括作物种类与生长周期、土壤肥力管理、灌溉系统设计、阳光与温度对作物的影响、肥料制作配方以及自动化收割与分类流水线搭建。农耕是游戏中稳定食物供给和部分工业原料来源的关键系统，理解其深层机制能让你在恶劣环境中也能保持稳定的资源产出。本指南还特别涵盖跨岛屿的物流农场设计理念，教你如何将不同岛屿的气候优势结合起来，实现全年无间断的大规模农业生产。',
+      desc: 'From clearing your first patch of farmland to building a large-scale automated farm — a comprehensive breakdown of Solarpunk\'s farming system. Includes crop types and growth cycles, soil fertility management, irrigation system design, the effects of sunlight and temperature on crops, fertilizer crafting recipes, and automated harvesting and sorting assembly line setup. Farming is the key system for stable food supply and some industrial raw materials — understanding its deep mechanics allows you to maintain consistent resource output even in harsh environments. This guide also covers cross-island logistics farm design concepts, teaching you how to combine the climate advantages of different islands for year-round, uninterrupted large-scale agricultural production.',
       readTime: '18',
-      difficulty: '中级',
+      difficulty: 'Intermediate',
       href: '/farming',
     },
     {
-      title: '能源系统终极指南',
-      category: '能源',
+      title: 'Ultimate Energy System Guide',
+      category: 'Energy',
       tagType: 'moss' as const,
-      desc: '全面剖析 Solarpunk 的各种能源方案：太阳能板阵列优化、风力发电布局、电池储能策略、地热与生物质能等高级能源的解锁与使用。能源是驱动一切自动化设备的前提，没有可靠的能源供应，再好的生产设计也只能停留在纸上。本指南不仅介绍每种能源设备的参数和特性，更重要的是教你如何根据岛屿环境、昼夜循环和季度变化设计弹性的混合能源系统。我们还会讲解能源网络布线技巧、负载平衡策略以及故障转移方案，确保你的基地在任何情况下都不会断电停产。',
+      desc: 'A comprehensive analysis of every energy solution in Solarpunk: solar panel array optimization, wind power layout, battery storage strategies, and unlocking and using advanced energy sources like geothermal and biomass. Energy is the prerequisite for powering all automation equipment — without a reliable energy supply, even the best production designs remain on paper. This guide not only covers the stats and characteristics of each energy device but also teaches you how to design flexible hybrid energy systems based on island environment, day-night cycles, and seasonal changes. We also cover power grid wiring techniques, load balancing strategies, and failover plans to ensure your base never loses power or halts production under any circumstances.',
       readTime: '15',
-      difficulty: '中级',
+      difficulty: 'Intermediate',
       href: '/energy',
     },
     {
-      title: '全资源采集与分布地图',
-      category: '资源',
+      title: 'Complete Resource Gathering & Distribution Map',
+      category: 'Resources',
       tagType: 'terracotta' as const,
-      desc: '全岛资源分布一览：木材、石头、铁矿、铜矿、金矿、稀土等各类资源的生成规律和最佳采集地点。附带各岛屿矿物分布热力图和高效采集路线规划。理解资源分布规律可以帮你做出更明智的探索和基地选址决策。本指南收录了游戏中所有已知的资源类型，包括基础建材、金属矿物、稀有元素和生物质资源，并逐一说明其用途、采集工具要求和替代获取方式。我们还会分享社区积累的"资源传送带"设计理念，教你如何建立高效的跨岛屿资源运输网络。',
+      desc: 'An overview of island-wide resource distribution: the spawn rules and optimal gathering locations for wood, stone, iron ore, copper ore, gold ore, rare earth minerals, and more. Includes mineral distribution heatmaps for each island and efficient gathering route plans. Understanding resource distribution patterns helps you make smarter exploration and base location decisions. This guide catalogs every known resource type in the game, including basic building materials, metal ores, rare elements, and biomass resources, explaining their uses, tool requirements, and alternative acquisition methods. We also share the community-developed "resource belt" design philosophy, teaching you how to build efficient cross-island resource transport networks.',
       readTime: '14',
-      difficulty: '入门',
+      difficulty: 'Beginner',
       href: '/resources',
     },
     {
-      title: '世界地图与生物群系探索指南',
-      category: '探索',
+      title: 'World Map & Biome Exploration Guide',
+      category: 'Exploration',
       tagType: 'moss' as const,
-      desc: '完整的浮空岛世界地图，包含已知的所有岛屿坐标、生物群系类型、特殊资源点以及隐藏区域的探索攻略。了解每个岛屿的气候特征、昼夜长度、危险等级以及可解锁的独特技术。不同生物群系之间存在显著的环境差异，这些差异直接影响你的生存策略和基地建设方案。本指南就像一本真正的野外日志，记录了先行者们探索每个区域时发现的重要信息，帮助你提前做好充分准备，减少探索过程中的意外和损失。',
+      desc: 'A complete map of the floating island world, including all known island coordinates, biome types, special resource locations, and hidden area exploration guides. Learn about each island\'s climate characteristics, day-night length, danger level, and unique unlockable technologies. Significant environmental differences exist between biomes, directly affecting your survival strategies and base construction plans. This guide reads like a real field journal, recording important information discovered by pioneers exploring each region, helping you prepare thoroughly and minimize surprises and losses during exploration.',
       readTime: '10',
-      difficulty: '入门',
+      difficulty: 'Beginner',
       href: '/map',
     },
     {
-      title: '30条生存技巧合集',
-      category: '技巧',
+      title: '30 Survival Tips Collection',
+      category: 'Tips',
       tagType: 'moss' as const,
-      desc: '汇集社区资深玩家总结的30条实用生存技巧，涵盖资源管理、基地防御、天气应对、效率优化等方方面面。每一条技巧都经过了实际验证，有些是小技巧能显著提升游戏体验，有些则是你可能玩了几十小时后才发现的高阶操作。从最基础的热键操作到复杂的自动化逻辑调试，从食物保鲜妙招到极端天气求生策略，这份合集是每一位 Solarpunk 玩家都值得收藏的参考手册。',
+      desc: 'A collection of 30 practical survival tips from veteran community players, covering resource management, base defense, weather response, efficiency optimization, and more. Every tip has been battle-tested — some are small tricks that significantly enhance your experience, while others are advanced techniques you might only discover after dozens of hours of play. From basic hotkey operations to complex automation logic debugging, from food preservation tricks to extreme weather survival strategies, this collection is a reference manual every Solarpunk player should bookmark.',
       readTime: '8',
-      difficulty: '全等级',
+      difficulty: 'All Levels',
       href: '/tips',
     },
   ];
@@ -80,9 +80,9 @@ export default function GuidesPage() {
     <div className="min-h-screen bg-field-paper bg-paper-texture">
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; 返回首页</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">建造指南</h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">从基础生存到高级建造的完整攻略合集</p>
+          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
+          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Guides</h1>
+          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">A complete collection of guides from basic survival to advanced building</p>
         </div>
         <div className="field-divider mt-6" />
       </header>
@@ -91,20 +91,20 @@ export default function GuidesPage() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           <div className="flex-1 lg:max-w-[65%] space-y-12">
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark">攻略总览</h2>
+              <h2 className="font-display text-2xl font-bold text-bark">Guide Overview</h2>
               <p className="font-body text-bark-light leading-relaxed mt-4">
-                欢迎来到 Solarpunk 攻略总览页面。我们按照游戏的核心系统对攻略进行了分类整理，无论你是刚踏上浮空岛的新手，还是追求极限效率的老玩家，都能在这里找到所需的内容。每篇攻略都由经验丰富的社区玩家编写和审校，内容经过多次版本更新验证，确保信息的准确性和实用性。以下是当前收录的所有攻略条目，点击即可查看完整内容。
+                Welcome to the Solarpunk Guides overview page. We have organized our guides by the game's core systems, so whether you're a newcomer stepping onto a floating island for the first time or a veteran chasing peak efficiency, you'll find what you need here. Every guide has been written and reviewed by experienced community players, with content verified across multiple game updates to ensure accuracy and usefulness. Below are all currently available guide entries — click any to view the full content.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                Solarpunk 作为一款开放世界生存建造游戏，其核心玩法涉及多个相互关联的系统：你需要采集资源来建造设施，建造设施来解锁更高级的科技，而科技的进步又会解锁新的资源采集方式。这种环环相扣的机制使得系统性地学习游戏攻略变得尤为重要。本页面将帮助你根据自己的当前进度和兴趣方向，快速定位到最有价值的攻略内容。
+                As an open-world survival building game, Solarpunk's core gameplay involves multiple interconnected systems: you gather resources to build facilities, build facilities to unlock advanced technology, and technological progress unlocks new resource gathering methods. This interlocking mechanism makes systematic guide reading especially important. This page will help you quickly find the most valuable guides based on your current progress and interests.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                我们建议新玩家按照以下顺序阅读攻略：先从新手生存完全指南开始，了解游戏的基本操作和初期目标；然后阅读能源系统指南，确保你的基地有稳定的电力供应；接着学习农耕系统，建立可持续的食物来源；再逐步深入到自动化和飞船系统。对于有一定经验的玩家，可以直接跳转到自己感兴趣的主题。所有攻略中的数值数据均来自社区估算和实际测试，可能随着游戏版本更新而调整，请以游戏内实际数据为准。
+                We recommend new players read guides in this order: start with the Complete Beginner Survival Guide to learn basic operations and early objectives; then read the Energy System Guide to ensure your base has stable power; next, learn the Farming System to establish a sustainable food source; then gradually dive into Automation and Airship systems. Experienced players can jump directly to topics of interest. All numerical data in our guides comes from community estimates and actual testing, and may adjust with game version updates — please refer to in-game data for the final word.
               </p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">全部攻略条目</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">All Guide Entries</h2>
               <div className="space-y-4">
                 {guides.map((guide, i) => (
                   <a key={i} href={guide.href} className="journal-card block p-6 group">
@@ -121,7 +121,7 @@ export default function GuidesPage() {
                           {guide.desc}
                         </p>
                       </div>
-                      <span className="font-body text-xs text-stone whitespace-nowrap">{guide.readTime} 分钟阅读</span>
+                      <span className="font-body text-xs text-stone whitespace-nowrap">{guide.readTime} min read</span>
                     </div>
                   </a>
                 ))}
@@ -129,24 +129,24 @@ export default function GuidesPage() {
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">常见问题</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Frequently Asked Questions</h2>
               <div className="space-y-2">
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">新手应该从哪篇攻略开始看？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Which guide should a beginner start with?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    建议从"新手生存完全指南"开始。这篇攻略专为零基础玩家设计，涵盖了从登陆浮空岛到建立第一个稳定基地的完整流程。配合游戏内置的生存手册系统，你可以在一到两个游戏日内掌握所有基础操作。完成新手指南后，推荐阅读"能源系统终极指南"，因为稳定的能源供应是所有后续系统运转的前提条件。
+                    We recommend starting with the "Complete Beginner Survival Guide." This guide is designed for players with zero prior experience, covering the full process from landing on the starting island to establishing your first stable base. Combined with the in-game Survival Handbook system, you can master all basic operations within one to two in-game days. After finishing the beginner guide, we recommend reading the "Ultimate Energy System Guide," since a stable energy supply is a prerequisite for all subsequent systems.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">攻略中的数值数据准确吗？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How accurate is the numerical data in the guides?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    所有数值数据均来自社区玩家的实际测试和估算，在发布时已与最新游戏版本进行核对。但需要说明的是，Solarpunk 仍在持续更新中，某些参数可能在版本变动后发生调整。我们会在每次重大更新后重新验证攻略数据，但难免存在一定的滞后。如果你发现某处数据与游戏内实际表现不符，欢迎通过爱发电平台联系我们反馈。
+                    All numerical data comes from actual testing and estimation by community players and has been verified against the latest game version at the time of publishing. However, it should be noted that Solarpunk is still receiving ongoing updates, and certain parameters may change with version updates. We re-verify guide data after each major update, but some lag is inevitable. If you find discrepancies between our data and in-game performance, feel free to contact us via Afdian with feedback.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">攻略内容会定期更新吗？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Are the guides updated regularly?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    会。我们密切关注 Solarpunk 的官方更新公告和社区反馈，在每次游戏内容更新后会优先更新受影响最大的攻略条目。通常完整更新周期约为一到两周。新内容的攻略（如新增生物群系或系统）会在社区充分探索后编写发布。你可以在首页的"最新动态"栏目或新闻页面查看最近的攻略更新状态。
+                    Yes. We closely monitor Solarpunk's official update announcements and community feedback. After each game content update, we prioritize updating the most affected guides. The typical full update cycle is about one to two weeks. Guides for new content (such as new biomes or systems) are written and published after the community has had time to explore. You can check the "Latest Updates" section on the homepage or the News page for recent guide update status.
                   </p>
                 </details>
               </div>
@@ -155,22 +155,22 @@ export default function GuidesPage() {
 
           <aside className="lg:w-[30%] space-y-10 shrink-0">
             <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">按难度筛选</h3>
+              <h3 className="font-display text-base font-semibold text-bark mb-4">Browse by Difficulty</h3>
               <div className="space-y-2 font-body text-sm">
-                <a href="/beginners" className="block text-moss hover:text-moss-dark transition-colors">入门级 &mdash; 零基础友好</a>
-                <a href="/farming" className="block text-moss hover:text-moss-dark transition-colors">中级 &mdash; 需要基础理解</a>
-                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">进阶 &mdash; 核心玩家进阶</a>
+                <a href="/beginners" className="block text-moss hover:text-moss-dark transition-colors">Beginner &mdash; zero experience friendly</a>
+                <a href="/farming" className="block text-moss hover:text-moss-dark transition-colors">Intermediate &mdash; requires basic knowledge</a>
+                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">Advanced &mdash; for experienced players</a>
               </div>
             </div>
             <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">快速导航</h3>
+              <h3 className="font-display text-base font-semibold text-bark mb-4">Quick Navigation</h3>
               <div className="space-y-2 font-body text-sm text-bark-light">
-                <p className="font-semibold text-bark">基础系统</p>
-                <p>能源系统 / 农耕系统 / 资源采集</p>
-                <p className="font-semibold text-bark mt-3">进阶系统</p>
-                <p>自动化 / 飞船建造 / 高级建造</p>
-                <p className="font-semibold text-bark mt-3">参考工具</p>
-                <p>制作配方 / 技巧合集 / 地图探索</p>
+                <p className="font-semibold text-bark">Basic Systems</p>
+                <p>Energy / Farming / Resource Gathering</p>
+                <p className="font-semibold text-bark mt-3">Advanced Systems</p>
+                <p>Automation / Airship Building / Advanced Construction</p>
+                <p className="font-semibold text-bark mt-3">Reference Tools</p>
+                <p>Crafting Recipes / Tips Collection / Map Exploration</p>
               </div>
             </div>
           </aside>
@@ -178,7 +178,7 @@ export default function GuidesPage() {
         <div className="field-divider mt-16" />
       </main>
       <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk 生存指南 · <a href="/privacy" className="hover:text-bark transition-colors">隐私政策</a> · <a href="/terms" className="hover:text-bark transition-colors">使用条款</a></p>
+        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/privacy" className="hover:text-bark transition-colors">Privacy Policy</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
       </footer>
     </div>
   );

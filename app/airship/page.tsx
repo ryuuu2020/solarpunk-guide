@@ -2,19 +2,19 @@
 
 export default function AirshipPage() {
   const engines = [
-    { name: '基础引擎', tier: 'T1', thrust: '基础', fuel: '低', desc: '初始飞船自带的引擎，推力有限，仅能往返初始岛屿和 L2 草原群岛。适合新手在初期探索邻近岛屿。' },
-    { name: '中级引擎', tier: 'T2', thrust: '中等', fuel: '中等', desc: '升级后的引擎，解锁 L3 级别岛屿的航行能力。燃油效率有所提升，是中期探索的主力配置。' },
-    { name: '重型引擎', tier: 'T3', thrust: '高', fuel: '高', desc: '强大的推力允许更大的载重量，适合用于物流运输飞船。油耗较高，建议搭配大型燃料仓。' },
-    { name: '终极引擎', tier: 'T4', thrust: '极高', fuel: '极高', desc: '游戏中最强力的引擎，解锁所有浮空岛区域的航行能力。可以支持巨型飞船满载运行。' },
+    { name: 'Basic Engine', tier: 'T1', thrust: 'Basic', fuel: 'Low', desc: 'The default engine on your starting airship. Limited thrust, only capable of traveling between the starting island and L2 Grassland Archipelago. Suitable for beginners exploring nearby islands.' },
+    { name: 'Intermediate Engine', tier: 'T2', thrust: 'Medium', fuel: 'Medium', desc: 'An upgraded engine that unlocks travel to L3-tier islands. Improved fuel efficiency — the workhorse for mid-game exploration.' },
+    { name: 'Heavy Engine', tier: 'T3', thrust: 'High', fuel: 'High', desc: 'Powerful thrust allows for larger cargo loads, ideal for logistics transport ships. Higher fuel consumption — pair with a large fuel tank.' },
+    { name: 'Ultimate Engine', tier: 'T4', thrust: 'Extreme', fuel: 'Very High', desc: 'The most powerful engine in the game, unlocking travel to all floating island regions. Capable of moving a massive airship fully loaded.' },
   ];
 
   return (
     <div className="min-h-screen bg-field-paper bg-paper-texture">
       <header className="pt-12 pb-6 px-4 lg:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-start">
-          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; 返回首页</a>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">飞船系统详解</h1>
-          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">引擎选择、甲板布局与云层之上的移动基地建造</p>
+          <a href="/" className="font-display text-sm text-moss hover:text-moss-dark transition-colors mb-4">&larr; Back to Home</a>
+          <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-bark leading-none">Airship System Deep Dive</h1>
+          <p className="font-body text-base text-stone mt-3 max-w-md leading-relaxed italic">Engine selection, deck layout, and building a mobile base above the clouds</p>
         </div>
         <div className="field-divider mt-6" />
       </header>
@@ -23,32 +23,32 @@ export default function AirshipPage() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           <div className="flex-1 lg:max-w-[65%] space-y-12">
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark">飞船系统概述</h2>
+              <h2 className="font-display text-2xl font-bold text-bark">Airship System Overview</h2>
               <p className="font-body text-bark-light leading-relaxed mt-4">
-                飞船是 Solarpunk 中最具标志性的系统，它既是你在浮空岛之间穿梭的交通工具，也可以被打造为一座完全自定义的移动基地。从最初修复的残破飞船到后期的飞行堡垒，飞船系统的发展几乎贯穿了游戏的整个进程。每一次引擎升级都会解锁新的岛屿区域，而每一次甲板扩展都会给你带来更多的自定义空间和功能性提升。
+                The airship is Solarpunk's most iconic system — it serves as both your vehicle for traveling between floating islands and a fully customizable mobile base. From the initially repaired wreck to a late-game flying fortress, the airship system's development spans nearly the entire game. Each engine upgrade unlocks new island regions, and each deck expansion gives you more customization space and functional improvements.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                飞船系统可以分为三个核心部分：引擎系统决定你能飞多远和载重多少、甲板布局决定飞船的实际功能和居住舒适度、燃油管理则影响飞行的经济性和可持续性。这三个部分相互制约又相辅相成——更强大的引擎允许更大的甲板和更重的载荷，但同时也需要更多的燃油和更大容量的燃料仓。在飞船设计中找到推力、载重和航程之间的平衡点，是每一位飞船设计师需要持续优化的工作。
+                The airship system can be divided into three core parts: the Engine System determines how far you can fly and how much you can carry, the Deck Layout determines the actual functionality and living comfort of your ship, and Fuel Management affects the economics and sustainability of flight. These three parts constrain and complement each other — a more powerful engine allows for a larger deck and heavier payload, but also requires more fuel and a larger fuel tank. Finding the balance between thrust, payload, and range in airship design is an ongoing optimization challenge for every ship designer.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                飞船不仅仅是一个交通工具。在甲板上，你可以放置工作台、储物箱、研究台、种植区和能源设备，将其打造为一座完全自给自足的移动基地。这种"飞行基地"的理念在后期探索中尤为重要——当你需要前往远离主基地的高危岛屿时，飞船上的设施可以保障你的基本生存和生产需求。许多老玩家会选择建造两艘不同用途的飞船：一艘轻量化探索舰用于快速侦察和短途航行，一艘重型移动基地用于长途远征和岛屿开发。
+                An airship is more than just a vehicle. On the deck, you can place workbenches, storage chests, research stations, planting areas, and energy equipment — transforming it into a fully self-sufficient mobile base. This "flying base" concept is particularly important in late-game exploration — when you need to travel to high-danger islands far from your main base, the ship's facilities can sustain your basic survival and production needs. Many veteran players choose to build two airships for different purposes: a lightweight exploration vessel for rapid scouting and short trips, and a heavy mobile base for long-range expeditions and island development.
               </p>
               <p className="font-body text-bark-light leading-relaxed mt-3">
-                燃料管理是飞船运营中不可忽视的成本因素。每次航行都会消耗一定量的燃料，燃料消耗量与飞行距离、引擎类型和当前载重量成正比。建立一个稳定的燃料生产和补给系统（通常涉及生物质能炼油或跨岛屿资源采购）是长期运营多艘飞船的必要条件。在远航前务必确认燃料储量充足并携带一定量的储备燃料——在云层之中油尽停船是 Solarpunk 中最糟糕的经历之一。
+                Fuel management is a non-negligible cost factor in airship operations. Every flight consumes a certain amount of fuel, proportional to flight distance, engine type, and current cargo weight. Establishing a stable fuel production and resupply system (typically involving biomass refining or cross-island resource procurement) is essential for long-term operation of multiple airships. Always verify sufficient fuel reserves before long voyages and carry a reserve supply — running out of fuel mid-cloud is one of the worst experiences in Solarpunk.
               </p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">引擎类型对比</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Engine Type Comparison</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-moss/30">
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">引擎</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">等级</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">推力</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">油耗</th>
-                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">说明</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Engine</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Tier</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Thrust</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Fuel Use</th>
+                      <th className="text-left py-3 px-3 font-display font-semibold text-bark">Description</th>
                     </tr>
                   </thead>
                   <tbody className="font-body text-bark-light">
@@ -64,35 +64,35 @@ export default function AirshipPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="font-body text-xs text-stone mt-4 italic">* 油耗和推力数据为社区估算值，具体取决于实际载重和航行距离。</p>
+              <p className="font-body text-xs text-stone mt-4 italic">* Fuel consumption and thrust data are community estimates; actual values depend on cargo weight and travel distance.</p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">甲板布局建议</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Deck Layout Recommendations</h2>
               <p className="font-body text-bark-light leading-relaxed">
-                典型的探索用小型飞船甲板布局：引擎舱（尾部）→ 驾驶舱（前部）→ 储物区（中部）→ 小型居住区（中部侧翼）。燃料仓应尽量紧邻引擎以减少管路损耗。在甲板上预留一个紧急逃生舱的位置——虽然占用空间，但在遭遇极端风暴或引擎故障时可以保住你的核心物资和科技进度。大型移动基地的布局则更加复杂，需要专门的能源舱、生产车间、仓储区以及足够的生活空间来支持长时间的自给航行。
+                A typical small exploration airship deck layout: Engine Room (rear) → Cockpit (front) → Storage Area (center) → Small Living Quarters (center wings). The fuel tank should be placed as close to the engine as possible to minimize pipeline losses. Reserve space for an escape pod on the deck — while it takes up room, it can save your core supplies and tech progress during extreme storms or engine failures. Large mobile base layouts are more complex, requiring dedicated energy compartments, production workshops, storage areas, and sufficient living space to support long-duration self-sufficient voyages.
               </p>
             </section>
 
             <section>
-              <h2 className="font-display text-2xl font-bold text-bark mb-6">常见问题</h2>
+              <h2 className="font-display text-2xl font-bold text-bark mb-6">Frequently Asked Questions</h2>
               <div className="space-y-2">
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">飞船修复需要什么材料？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">What materials are needed to repair the airship?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    初始飞船修复需要制作修理套件（铁锭 x5 + 木材 x8 + 布料 x2）并在飞船码头使用。铁锭通过熔炉冶炼铁矿获得，布料通过加工纤维或纤维作物获取。修复飞船后还需要解锁基础航行技术研究，并在码头使用一次"测试飞行"功能来完成初次飞行的校准。整个过程大约需要小型基地的完整能源和材料支持。
+                    Initial airship repair requires crafting a Repair Kit (Iron Ingot x5 + Wood x8 + Cloth x2) and using it at the Airship Dock. Iron Ingots are obtained by smelting Iron Ore in a Furnace, and Cloth is obtained by processing Fiber or Fiber Crops. After repair, you also need to unlock Basic Navigation Technology research and use the "Test Flight" function at the dock once to complete the calibration for your first flight. The entire process requires full energy and material support from a small base.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">我应该造几艘飞船？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">How many airships should I build?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    取决于你的游戏阶段和目标。早期建议集中资源打造一艘通用型飞船，满足基础的岛屿解锁和资源运输需求。中期可以增加一艘专用的物流飞船，专门在已解锁的岛屿之间进行定期物资运输。后期可以在多个岛屿维持一支小型飞船编队，每艘承担不同的角色：探索舰、运输舰、移动基地舰和战斗舰。但要注意每艘新增飞船都会增加燃料消耗和维护成本。
+                    It depends on your game stage and goals. In early game, focus resources on building one general-purpose airship to meet basic island unlocking and resource transport needs. Mid-game, add a dedicated logistics ship for regular material transport between unlocked islands. Late game, you can maintain a small fleet across multiple islands, each with different roles: exploration vessel, transport ship, mobile base ship, and combat vessel. But note that each additional airship increases fuel consumption and maintenance costs.
                   </p>
                 </details>
                 <details className="journal-card p-4 group cursor-pointer">
-                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">飞船能用来战斗吗？</summary>
+                  <summary className="font-display font-semibold text-bark text-sm marker:text-moss">Can airships be used for combat?</summary>
                   <p className="font-body text-sm text-bark-light leading-relaxed mt-3 pl-3 border-l-2 border-moss/30">
-                    目前版本的 Solarpunk 没有专门的飞船战斗系统。飞船主要用于探索、运输和作为移动基地。不过，你可以在甲板上安装防御性设备来应对环境危害——如风暴防护罩用于极端天气、加固装甲用于高速碰撞保护。未来的版本更新中可能会引入更丰富的飞船交互玩法。社区中也有关于潜在空中战斗系统的讨论和期待。
+                    The current version of Solarpunk does not have a dedicated airship combat system. Airships are primarily used for exploration, transport, and as mobile bases. However, you can install defensive equipment on the deck to handle environmental hazards — such as storm shields for extreme weather and reinforced armor for high-speed collision protection. Future version updates may introduce richer airship interaction mechanics. The community has also discussed and expressed anticipation for potential aerial combat systems.
                   </p>
                 </details>
               </div>
@@ -101,11 +101,11 @@ export default function AirshipPage() {
 
           <aside className="lg:w-[30%] space-y-10 shrink-0">
             <div className="field-sidebar-block">
-              <h3 className="font-display text-base font-semibold text-bark mb-4">相关攻略</h3>
+              <h3 className="font-display text-base font-semibold text-bark mb-4">Related Guides</h3>
               <div className="space-y-2 font-body text-sm">
-                <a href="/energy" className="block text-moss hover:text-moss-dark transition-colors">能源系统指南</a>
-                <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">世界地图</a>
-                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">自动化系统指南</a>
+                <a href="/energy" className="block text-moss hover:text-moss-dark transition-colors">Energy System Guide</a>
+                <a href="/map" className="block text-moss hover:text-moss-dark transition-colors">World Map</a>
+                <a href="/automation" className="block text-moss hover:text-moss-dark transition-colors">Automation System Guide</a>
               </div>
             </div>
           </aside>
@@ -113,7 +113,7 @@ export default function AirshipPage() {
         <div className="field-divider mt-16" />
       </main>
       <footer className="max-w-6xl mx-auto px-4 lg:px-8 py-10 text-center">
-        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk 生存指南 · <a href="/privacy" className="hover:text-bark transition-colors">隐私政策</a> · <a href="/terms" className="hover:text-bark transition-colors">使用条款</a></p>
+        <p className="font-body text-xs text-stone">&copy; {new Date().getFullYear()} Solarpunk Survival Guide · <a href="/privacy" className="hover:text-bark transition-colors">Privacy Policy</a> · <a href="/terms" className="hover:text-bark transition-colors">Terms of Use</a></p>
       </footer>
     </div>
   );
