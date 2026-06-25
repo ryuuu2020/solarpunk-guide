@@ -65,7 +65,7 @@ export default function HomePage() {
 
       {/* ===== Hero Image ===== */}
       <div className="w-full h-48 lg:h-80 overflow-hidden">
-        <img src="/hero.png" alt="Solarpunk" className="w-full h-full object-cover" />
+        <img src="/hero.jpg" alt="Solarpunk" className="w-full h-full object-cover" />
       </div>
 
       {/* ===== Header ===== */}
