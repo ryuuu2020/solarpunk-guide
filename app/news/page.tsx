@@ -6,7 +6,16 @@ export default function NewsPage() {
 
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
         <div className="flex-1 lg:max-w-[65%] space-y-8">
+          
           <div className="journal-card p-6">
+            <span className="field-tag moss text-[10px] mb-2 inline-block">GAME UPDATE</span>
+            <h2 className="font-display text-lg font-semibold text-bark mb-2">Mid-Update: Crossplay Testing, Feature Voting Opens</h2>
+            <span className="font-body text-xs text-stone">June 26, 2026</span>
+            <p className="font-body text-sm text-bark-light mt-3 leading-relaxed">
+              Cyberwave has released a mid-update introducing the first phase of crossplay support — Steam and GOG players can now join the same co-op sessions. While full cross-platform play (PC to console) is still in development, this is a significant step. The update also opens community feature voting through the official Discord, letting players prioritize upcoming features: expanded animal breeding, new island biomes, automated farming drones, and weather system improvements. Several bug fixes address floating item visual glitches and airship docking collision issues reported since the June 8 launch. With 6,300+ Kickstarter backers and a growing player base across 6 platforms, Cyberwave confirmed content updates will roll out every 3-4 weeks through 2026.
+            </p>
+          </div>
+<div className="journal-card p-6">
             <span className="field-tag moss text-[10px] mb-2 inline-block">GAME UPDATE</span>
             <h2 className="font-display text-lg font-semibold text-bark mb-2">Solarpunk 1.0 Launches Worldwide</h2>
             <span className="font-body text-xs text-stone">June 8, 2026</span>
