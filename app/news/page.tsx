@@ -8,6 +8,15 @@ export default function NewsPage() {
         <div className="flex-1 lg:max-w-[65%] space-y-8">
           
           <div className="journal-card p-6">
+            <span className="field-tag terracotta text-[10px] mb-2 inline-block">PLATFORM NEWS</span>
+            <h2 className="font-display text-lg font-semibold text-bark mb-2">Crossplay Update Live — Feature Voting Opens to All Players</h2>
+            <span className="font-body text-xs text-stone">June 27, 2026</span>
+            <p className="font-body text-sm text-bark-light mt-3 leading-relaxed">
+              Cyberwave shipped the Solarpunk mid-update on June 23, bringing three significant additions. First, crossplay is now live across PC and GOG, meaning you can co-op build with friends regardless of platform — a long-requested feature since launch. Second, the developer opened a Feature Voting system where players can submit and upvote new feature ideas directly, with Cyberwave committing to prioritize top-voted items in upcoming patches. Third, a batch of quality-of-life fixes landed: improved airship physics handling, faster farm crop processing, and several stability fixes for large settlements. The airship bug that caused cargo to despawn during fast travel has been addressed. For players who left after week one, now is a good time to return — the early-game grind has been noticeably smoothed by the farming speed boost, and crossplay means you can finally invite your friends to your island commune.
+            </p>
+          </div>
+
+          <div className="journal-card p-6">
             <span className="field-tag moss text-[10px] mb-2 inline-block">GAME UPDATE</span>
             <h2 className="font-display text-lg font-semibold text-bark mb-2">Mid-Update: Crossplay Testing, Feature Voting Opens</h2>
             <span className="font-body text-xs text-stone">June 26, 2026</span>
