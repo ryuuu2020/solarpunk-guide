@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Script from "next/script";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Solarpunk Survival Guide — Complete Floating Island Survival & Building Guide',
@@ -46,19 +48,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="4cd6cdf221ea7b0b" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K`} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ET6778V62K');
-            `,
-          }}
-        />
-        {/* Google AdSense */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K" />
+        <Script strategy="lazyOnload" id="gtag-init">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ET6778V62K');`}
+            </Script>
+        <Script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
       </head>
       <body className="font-body min-h-screen flex flex-col bg-field-paper bg-paper-texture">
         <div className="flex min-h-screen flex-1">
@@ -67,14 +64,14 @@ export default function RootLayout({
           <aside className="hidden lg:flex flex-col w-60 bg-white/80 border-r border-clay/50 shrink-0 overflow-y-auto">
 
             {/* Brand */}
-            <a href="/" className="flex items-center gap-3 px-5 h-14 border-b border-clay/50 hover:bg-field-paper-warm transition-colors shrink-0">
+            <Link href="/" className="flex items-center gap-3 px-5 h-14 border-b border-clay/50 hover:bg-field-paper-warm transition-colors shrink-0">
               <span className="w-7 h-7 rounded-full bg-moss flex items-center justify-center">
                 <span className="text-[10px] font-display font-bold text-white">SP</span>
               </span>
               <span className="font-display text-sm font-semibold tracking-tight text-bark">
                 Solarpunk
               </span>
-            </a>
+            </Link>
 
             {/* Navigation */}
             <nav className="py-3 flex flex-col gap-0.5 shrink-0">

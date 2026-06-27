@@ -29,9 +29,9 @@ export default function HomePage() {
 
         {/* --- Welcome / Hero message --- */}
         <section>
-          <h2 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-bark leading-tight text-balance">
+          <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-bark leading-tight text-balance">
             Welcome to the Floating Islands
-          </h2>
+          </h1>
           <p className="font-body text-lg text-bark-light leading-relaxed mt-4 max-w-2xl">
             Solarpunk is an open-world survival crafting game where you build a home on islands floating in the sky — solo or with friends. Grow crops, raise animals, power your base with renewable energy, and upgrade your airship to reach new islands. This guide takes you from zero to mastering every core system.
           </p>
