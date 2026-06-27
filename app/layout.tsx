@@ -61,7 +61,7 @@ gtag('config', 'G-ET6778V62K');`}
         <div className="flex min-h-screen flex-1">
 
           {/* ===== Sidebar (left) ===== */}
-          <aside className="hidden lg:flex flex-col w-60 bg-white/80 border-r border-clay/50 shrink-0 overflow-y-auto">
+          <aside className="hidden lg:flex flex-col w-60 bg-field-paper-warm/90 border-r border-clay/50 shrink-0 overflow-y-auto">
 
             {/* Brand */}
             <Link href="/" className="flex items-center gap-3 px-5 h-14 border-b border-clay/50 hover:bg-field-paper-warm transition-colors shrink-0">
