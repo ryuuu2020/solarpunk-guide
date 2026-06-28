@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Automation Guide — Efficient Systems (2026)",
+  description:
+    "Complete automation guide for Solarpunk. Automate resource production and colony management.",
+};
+
 export default function AutomationPage() {
   const machines = [
     { name: 'Transport Drone', desc: 'Transports resources between islands. Set pickup and delivery points — drones automatically ferry items across your island network. Each drone requires naming before deployment.', unlock: 'Drone Technology research' },

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Community Guide — Multiplayer & Tips (2026)",
+  description:
+    "Complete community guide for Solarpunk. Multiplayer, community tips, and mod recommendations.",
+};
+
 export default function CommunityPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 lg:px-8 py-8">

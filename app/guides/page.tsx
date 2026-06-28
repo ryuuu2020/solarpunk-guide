@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Guides — Complete Strategy Collection (2026)",
+  description:
+    "Complete strategy guides for Solarpunk. In-depth tutorials and pro tips.",
+};
+
 
 export default function GuidesPage() {
   const guides = [

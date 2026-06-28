@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk News & Updates — Latest Patches (2026)",
+  description:
+    "Latest Solarpunk news and updates. Patch notes and community highlights.",
+};
+
 export default function NewsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 lg:px-8 py-8">

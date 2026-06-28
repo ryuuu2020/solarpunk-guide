@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Map Guide — Biomes & Exploration (2026)",
+  description:
+    "Complete map guide for Solarpunk. Biomes, exploration tips, and resource locations.",
+};
+
 
 export default function MapPage() {
   const biomes = [

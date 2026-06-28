@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Crafting Guide — Recipes & Workbenches (2026)",
+  description:
+    "Complete crafting guide for Solarpunk. Crafting recipes, workbenches, and resource chains.",
+};
+
 
 export default function CraftingPage() {
   const recipes = [

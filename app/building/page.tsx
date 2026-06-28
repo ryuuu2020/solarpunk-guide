@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Building Guide — Construction Tips (2026)",
+  description:
+    "Complete building guide for Solarpunk. Construction materials, placement strategies, and optimization.",
+};
+
 export default function BuildingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 lg:px-8 py-8">

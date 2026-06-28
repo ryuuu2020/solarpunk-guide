@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Energy Guide — Power & Electricity (2026)",
+  description:
+    "Complete energy guide for Solarpunk. Power generation, storage, and efficient energy systems.",
+};
+
 export default function EnergyPage() {
   const sources = [
     { name: 'Solar Panel', desc: 'Generates energy when exposed to sunlight. Most common renewable source — zero fuel cost, zero maintenance. Output varies by time of day and weather. Place in open areas with maximum sun exposure.', pros: 'No fuel, easy to build', cons: 'No power at night, reduced in cloudy weather' },

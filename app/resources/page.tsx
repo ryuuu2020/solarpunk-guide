@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Resources Guide — Gathering & Management (2026)",
+  description:
+    "Complete resources guide for Solarpunk. Resource gathering, storage, and management.",
+};
+
 
 export default function ResourcesPage() {
   const resources = [

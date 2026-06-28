@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Farming Guide — Crops & Food Production (2026)",
+  description:
+    "Complete farming guide for Solarpunk. Best crops, irrigation systems, and food production.",
+};
+
 export default function FarmingPage() {
   const crops = [
     { name: 'Carrot', growth: 'Fast', water: 'Low', notes: 'Good starter crop, grows quickly with minimal water' },

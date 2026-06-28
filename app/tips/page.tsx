@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Pro Tips — Advanced Strategies (2026)",
+  description:
+    "Pro tips for Solarpunk. Advanced strategies and optimization techniques.",
+};
+
 
 export default function TipsPage() {
   const tips = [

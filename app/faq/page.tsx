@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk FAQ — Frequently Asked Questions (2026)",
+  description:
+    "Frequently asked questions about Solarpunk. Answers to common gameplay questions.",
+};
+
 
 export default function FaqPage() {
   const faqs = [

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Solarpunk Airship Guide — Building & Navigation (2026)",
+  description:
+    "Complete airship guide for Solarpunk. Building, navigation, and combat strategies.",
+};
+
 export default function AirshipPage() {
   const upgrades = [
     { name: 'Timber Hull', desc: 'Increases damage capacity before reaching critical damage thresholds. A sturdier hull means you can weather more storm damage and accidental impacts.', unlock: 'Basic airship repair' },

@@ -1,4 +1,10 @@
 'use client';
+export const metadata = {
+  title: "Solarpunk Beginner Guide — Getting Started (2026)",
+  description:
+    "Complete beginner guide for Solarpunk. First steps, resource gathering, and base building.",
+};
+
 
 export default function BeginnersPage() {
   const steps = [
