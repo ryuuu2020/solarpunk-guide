@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Script from "next/script";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Solarpunk Survival Guide — Complete Floating Island Survival & Building Guide',
@@ -163,8 +164,13 @@ gtag('config', 'G-ET6778V62K');`}
           <div className="flex-1 flex flex-col min-w-0">
 
             {/* ===== Hero Image ===== */}
-            <div className="w-full h-48 lg:h-80 overflow-hidden">
-              <img src="/hero.jpg" alt="Solarpunk" className="w-full h-full object-cover" />
+            <div className="w-full h-48 lg:h-80 overflow-hidden relative">
+              <Image
+                src="/hero.jpg"
+                alt="Solarpunk survival gameplay screenshot"
+                fill
+                className="object-cover"
+              />
             </div>
 
             {/* ===== Header ===== */}
