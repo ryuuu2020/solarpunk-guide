@@ -57,6 +57,35 @@ gtag('js', new Date());
 gtag('config', 'G-ET6778V62K');`}
             </Script>
         <Script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Solarpunk Survival Guide",
+  "description": "The ultimate Solarpunk survival guide and wiki. Master survival, automation, building, and exploration.",
+  "url": "https://solarpunk-game-wiki.vercel.app",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://solarpunk-game-wiki.vercel.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Game Guide Hub",
+  "url": "https://solarpunk-game-wiki.vercel.app"
+}`,
+          }}
+        />
       </head>
       <body className="font-body min-h-screen flex flex-col bg-field-paper bg-paper-texture">
         <div className="flex min-h-screen flex-1">
@@ -256,6 +285,13 @@ gtag('config', 'G-ET6778V62K');`}
                   <a href="https://olden-era-guide-tau.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">Olden Era Guide</a>
                   <a href="https://going-medieval-guide.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">Going Medieval Guide</a>
                 </div>
+              </div>
+              {/* E-E-A-T: Sources & Last Updated */}
+              <div className="mt-4 pt-4 border-t border-clay/30">
+                <p className="font-body text-xs text-stone text-center">
+                  <strong>Sources:</strong> All guides are based on the <a href="https://store.steampowered.com/app/1805110/Solarpunk/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Steam patch notes</a>, community testing, and gameplay experience.
+                </p>
+                <p className="font-body text-xs text-stone text-center mt-1">Last updated: June 2026</p>
               </div>
             </footer>
 
