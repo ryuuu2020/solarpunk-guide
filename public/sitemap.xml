@@ -31,7 +31,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://solarpunk-game-wiki.vercel.app/best-crops</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://solarpunk-game-wiki.vercel.app/building</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://solarpunk-game-wiki.vercel.app/colonist-guide</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -86,6 +98,12 @@
   </url>
   <url>
     <loc>https://solarpunk-game-wiki.vercel.app/privacy</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://solarpunk-game-wiki.vercel.app/research-tree</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
