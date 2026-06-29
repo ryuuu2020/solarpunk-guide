@@ -284,6 +284,7 @@ gtag('config', 'G-ET6778V62K');`}
                   <a href="https://menace-guide.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">MENACE Guide</a>
                   <a href="https://olden-era-guide-tau.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">Olden Era Guide</a>
                   <a href="https://going-medieval-guide.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">Going Medieval Guide</a>
+                  <a href="https://cairn-guide.vercel.app" className="font-body text-xs text-bark-light hover:text-bark transition-colors">Cairn Guide</a>
                 </div>
               </div>
               {/* E-E-A-T: Sources & Last Updated */}
