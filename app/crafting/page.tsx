@@ -1,4 +1,3 @@
-'use client';
 export const metadata = {
   title: "Solarpunk Crafting Guide — Recipes & Workbenches (2026)",
   description:

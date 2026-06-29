@@ -1,4 +1,3 @@
-'use client';
 export const metadata = {
   title: "Solarpunk FAQ — Frequently Asked Questions (2026)",
   description:

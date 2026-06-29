@@ -1,4 +1,3 @@
-'use client';
 export const metadata = {
   title: "Solarpunk Pro Tips — Advanced Strategies (2026)",
   description:

@@ -1,4 +1,3 @@
-'use client';
 export const metadata = {
   title: "Solarpunk Map Guide — Biomes & Exploration (2026)",
   description:

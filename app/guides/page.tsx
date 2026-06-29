@@ -1,4 +1,3 @@
-'use client';
 export const metadata = {
   title: "Solarpunk Guides — Complete Strategy Collection (2026)",
   description:
